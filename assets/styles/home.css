@@ -1,0 +1,4 @@
+.heroOverlay{
+    background: linear-gradient(180deg, rgba(5, 22, 50, 0) 0%, rgba(5, 22, 50, 0.9) 69.79%, #051632 100%);
+transform: rotate(90deg);
+}
