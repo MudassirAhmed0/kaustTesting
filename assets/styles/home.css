@@ -1,4 +1,35 @@
 .heroOverlay{
-    background: linear-gradient(180deg, rgba(5, 22, 50, 0) 0%, rgba(5, 22, 50, 0.9) 69.79%, #051632 100%);
-transform: rotate(90deg);
+    background: linear-gradient(270deg, rgba(5, 22, 50, 0) 0%, rgba(5, 22, 50, 0.9) 69.79%, #051632 100%);
+
+}
+
+ .videoOverlay{
+    background: linear-gradient(0deg, rgba(5, 22, 50, 0.7), rgba(5, 22, 50, 0.7))
+ }
+
+ .swiper-pagination-bullet{
+    width: 1.354vw!important;
+    opacity: 0.5!important;
+    border-radius: 0!important;
+    height: 2px!important;
+    background-color: #000!important;
+    margin-right: 0!important;
+    margin-left: 0.93vw!important;
+ }
+ .swiper-pagination-bullet-active {
+    width: 4.270vw!important;
+    opacity: 1!important;
+ }
+ .swiper-button-prev,.swiper-button-next{
+    background: url(../images/svgs/awarnessCarouselArrow.svg) no-repeat!important;
+    background-size: cover!important;
+    width: 0.729vw!important;
+    height: 0.9375vw!important;
+    top: unset!important;
+}
+ .swiper-button-next{
+    transform: rotate(180deg)!important;
+ }
+ .swiper-button-prev::after,.swiper-button-next::after{
+    display: none;
 }

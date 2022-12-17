@@ -6,23 +6,44 @@
 @font-face {
     font-family: 'Nunito';
     src: url('../fonts/nunito/Nunito-Regular.ttf');
+    font-display: block;
 }
 @font-face {
     font-family: 'Nunito';
     src: url('../fonts/nunito/Nunito-Light.ttf');
+    font-display: block;
     font-weight: 300;
 }
 @font-face {
     font-family: 'Nunito';
     src: url('../fonts/nunito/Nunito-Medium.ttf');
+    font-display: block;
     font-weight: 500;
 }
 @font-face {
     font-family: 'Nunito';
     src: url('../fonts/nunito/Nunito-Bold.ttf');
+    font-display: block;
     font-weight: 700;
 }
 
 body{
     font-family: 'Nunito';
+}
+.myContainer{
+    width: 84.375vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ 
+    .heading {
+      @apply font-[700] text-[2.91vw] leading-[3.95vw] uppercase
+    }
+ 
+    .para{
+    @apply text-[1.145vw] leading-[1.71vw]
+}
+    .tagline{
+    @apply text-[1.458vw] leading-[1.9791vw] text-[#F2A943]
 }

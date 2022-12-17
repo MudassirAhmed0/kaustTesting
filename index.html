@@ -1,16 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home || KAUST</title>
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link rel="stylesheet" href="./assets//styles/home.css">
-</head>
-<body>
-     <section class="min-h-[100vh] relative w-full">
-        <span class="relative w-full h-full top-0 left-0 heroOverlay"></span>
-     </section>
-</body>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets//styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="absolute w-full top-[3.70vh]">
+      <div class="myContainer flex justify-end items-center">
+        <div class="flex items-center gap-x-[0.83vw]">
+          <span
+            class="border-white font-[300] text-[1.30vw] text-white pr-[0.83vw] border-r transition-all duration-500 hover:opacity-[0.8]"
+          >
+            AR
+          </span>
+          <img
+            src="./assets/images/svgs/Menu.svg"
+            alt="Menu"
+            class="w-[2.083vw] transition-all duration-500 hover:opacity-[0.8]"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="min-h-[100vh] relative flex items-center">
+      <video
+        src="./assets/videos/heroVideo.mp4"
+        autoplay
+        muted
+        loop
+        class="w-full h-full absolute top-0 left-0 object-cover"
+      ></video>
+      <span class="absolute w-full h-full top-0 left-0 heroOverlay"></span>
+      <div class="myContainer relative text-white pt-[16.29vh]">
+        <img
+          src="./assets/images/logos/logo.svg"
+          alt="Logo"
+          class="w-[19.79vw]"
+        />
+        <h1 class="heading w-[39.58vw] mt-[3.64vw] mb-[1.145vw]">
+          World’s Largest Coral Garden in the Red Sea
+        </h1>
+        <p class="para w-[37.23vw]">
+          The Shusha Island Coral Park will become a global center to showcase
+          innovations to protect and restore coral reefs
+        </p>
+      </div>
+      <div
+        class="w-[1.4vw] h-[1.45vw] absolute tranform flex flex-col items-center justify-center translate-x-[-50%] left-[50%] bottom-[4.07vh] animateArrow"
+      >
+        <img src="./assets/images/svgs/smallestArrow.svg" alt="smallestArrow" />
+        <img src="./assets/images/svgs/smallArrow.svg" alt="smallArrow" />
+        <img src="./assets/images/svgs/bigArrow.svg" alt="bigArrow" />
+      </div>
+    </section>
+    <section class="py-[13.88vh] bg-white relative overflow-hidden">
+      <img
+        src="./assets/images/svgs/about.svg"
+        alt="Brand Icon"
+        class="absolute right-0 bottom-[-41.92vw] w-[34.218vw]"
+      />
+      <div class="myContainer">
+        <div class="w-[62.5vw]">
+          <span class="tagline"> Overview </span>
+          <h3 class="heading">About the Project</h3>
+          <div
+            class="mt-[1.666vw] flex flex-col gap-y-[1.145vw] text-[#666666]"
+          >
+            <p class="para">
+              The KAUST Reefscape Restoration Initiative is a large-scale coral
+              reef restoration program in the Red Sea in the Kingdom of Saudi
+              Arabia (KSA), begun in 2021 and funded by King Abdullah University
+              of Science and Technology
+              <span class="text-[#3E828E]">(KAUST)</span> , a world-class
+              graduate research university in Thuwal, Saudi Arabia on the Red
+              Sea north of Jeddah, in partnership with
+              <span class="text-[#3E828E]">NEOM</span> , a region in northwest
+              Saudi Arabia that is being sustainably developed from the ground
+              up with the world’s most advanced technologies to redefine how
+              people live, work, and play.
+            </p>
+            <p class="para">
+              The initiative will begin with a 100-hectare reef restoration
+              project at Shushah Island. This will be a global demonstration of
+              coral restoration that integrates innovative, in-Kingdom and
+              internationally developed technologies, pioneering propagation,
+              planting and monitoring approaches, and international expertise to
+              accelerate solutions for reef ecosystems at a time of
+              unprecedented environmental change. The program’s first reefscape
+              restoration site is located near Shushah Island, approximately
+              20km off the shore of NEOM. Shushah Island. While the island
+              itself is relatively small,
+            </p>
+          </div>
+          <img
+            src="./assets/images/svgs/signature.svg"
+            alt="Signature"
+            class="w-[8.020vw] my-[1.70vw] ml-auto"
+          />
+          <div class="flex items-center gap-x-[1.2vw]">
+            <span class="para uppercase">Read More</span>
+            <div
+              class="flex flex-col items-center transform rotate-[270deg] justify-center animateArrow"
+            >
+              <img
+                src="./assets/images/svgs/blackSmallestArrow.svg"
+                alt="smallestArrow"
+              />
+              <img
+                src="./assets/images/svgs/blackSmallArrow.svg"
+                alt="smallArrow"
+              />
+              <img
+                src="./assets/images/svgs/blackBigArrow.svg"
+                alt="bigArrow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-[22.5vw] bg-white">
+      <div
+        class="w-[86.71vw] mx-auto h-[44.94vw] relative flex justify-center items-center z-[5] rounded-[1.04166666667vw] overflow-hidden"
+      >
+        <video
+          src="./assets/videos/heroVideo.mp4"
+          class="top-0 left-0 w-full h-full object-cover absolute"
+        ></video>
+        <span class="absolute top-0 left-0 w-full h-full videoOverlay"></span>
+        <div
+          class="relative flex flex-col justify-center items-center text-white"
+        >
+          <div class="mb-[2.8125vw] relative">
+            <img
+              src="./assets/images/svgs/videoBrandIcon.svg"
+              alt="BrandIcon"
+            />
+            <img
+              src="./assets/images/svgs/pauseIcon.svg"
+              alt="Pause"
+              class="w-[1.30208333333vw] absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
+            />
+          </div>
+          <h4 class="heading mb-[0.52083333333vw]">100 Hectares</h4>
+          <p class="text-[1.5625vw] font-[700]">On The Shores Of The Red Sea</p>
+        </div>
+      </div>
+    </section>
+    <section class="h-[120.555vh] bg-[#051632] relative">
+      <img
+        src="./assets/images/svgs/awarenessBrandIcons/brandIcon1.svg"
+        id="aBI1"
+        alt="awarenessBrandIcons"
+        class="absolute w-[91.875vw] transition-all"
+      />
+      <img
+        src="./assets/images/svgs/awarenessBrandIcons/brandIcon2.svg"
+        id="aBI2"
+        alt="awarenessBrandIcons"
+        class="opacity-[0] absolute w-[91.875vw] transition-all"
+      />
+      <div class="absolute w-full bottom-[14.3229vw] left-0">
+        <div class="myContainer text-white">
+          <span class="tagline"> Awareness </span>
+          <h3 class="heading">Guiding Principles</h3>
+          <p
+            class="text-[1.458vw] leading-[1.9791vw] mb-[3.75vw] mt-[1.770vw] text-white w-[41.66vw]"
+          >
+            Support NEOM and Saudi Arabia’s goals to study and protect Red Sea
+            marine environments
+          </p>
+          <div class="flex items-center gap-x-[1.2vw]">
+            <span class="para uppercase">Read More</span>
+            <img
+              src="./assets/images/svgs/arrowWhite.svg"
+              alt="Arrow"
+              class="w-[1.406vw]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute w-full bottom-[6.979vw]">
+        <div class="flex gap-x-[3.333vw] items-center myContainer">
+          <img
+            src="./assets/images/svgs/awarnessCarouselArrow.svg"
+            alt="Arrow"
+            class="w-[0.729vw]"
+          />
+          <div class="flex gap-x-[0.93vw]">
+            <span class="bg-white h-[2px] w-[4.270vw]"></span>
+            <span class="bg-white h-[2px] w-[1.354vw] opacity-[0.5]"></span>
+            <span class="bg-white h-[2px] w-[1.354vw] opacity-[0.5]"></span>
+            <span class="bg-white h-[2px] w-[1.354vw] opacity-[0.5]"></span>
+          </div>
+          <img
+            src="./assets/images/svgs/awarnessCarouselArrow.svg"
+            alt="Arrow"
+            class="transform w-[0.729vw] rotate-[180deg]"
+          />
+        </div>
+      </div>
+    </section>
+    <style>
+      .swiper {
+  width: 600px;
+  height: 300px;
+}
+    </style>
+    <section class="py-[6.77083333333vw]">
+      <h3 class="heading">The Partners</h3>
+      <div class="swiper ">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>  
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        
+      </div>
+    </section>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+  
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+    </script>
+    <script>
+      let el1 = document.getElementById("aBI1");
+      let el2 = document.getElementById("aBI2");
+      window.addEventListener("click", () => {
+        // el1.classList.contains("opacity-[0]")
+        //   ? el1.classList.remove("hidden") &&
+        //     el1.classList.remove("opacity-[0]") &&
+        //     el2.classList.add("hidden") &&
+        //     el2.classList.add("opacity-[0]")
+        //   : el1.classList.add("hidden") && el1.classList.add("opacity-[0]");
+        // el2.classList.add("hidden") && el2.classList.add("opacity-[0]");
+        if (el2.classList.contains("opacity-[0]")) {
+          el2.classList.remove("hidden");
+          el2.classList.remove("opacity-[0]");
+          el1.classList.add("hidden");
+          el1.classList.add("opacity-[0]");
+        } else {
+          el2.classList.add("hidden");
+          el2.classList.add("opacity-[0]");
+          el1.classList.remove("hidden");
+          el1.classList.remove("opacity-[0]");
+        }
+      });
+    </script>
+  </body>
 </html>
