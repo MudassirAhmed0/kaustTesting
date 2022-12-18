@@ -645,16 +645,16 @@ video {
   bottom: -41.92vw;
 }
 
+.top-\[50\%\] {
+  top: 50%;
+}
+
 .bottom-\[14\.3229vw\] {
   bottom: 14.3229vw;
 }
 
 .bottom-\[6\.979vw\] {
   bottom: 6.979vw;
-}
-
-.top-\[50\%\] {
-  top: 50%;
 }
 
 .isolate {
@@ -723,6 +723,14 @@ video {
   margin-left: auto;
 }
 
+.mb-\[2\.8125vw\] {
+  margin-bottom: 2.8125vw;
+}
+
+.mb-\[0\.52083333333vw\] {
+  margin-bottom: 0.52083333333vw;
+}
+
 .mb-\[3\.75vw\] {
   margin-bottom: 3.75vw;
 }
@@ -735,12 +743,24 @@ video {
   margin-top: 0.5rem;
 }
 
-.mb-\[2\.8125vw\] {
-  margin-bottom: 2.8125vw;
+.mt-\[3\.75vw\] {
+  margin-top: 3.75vw;
 }
 
-.mb-\[0\.52083333333vw\] {
-  margin-bottom: 0.52083333333vw;
+.mb-\[2\.5vw\] {
+  margin-bottom: 2.5vw;
+}
+
+.mb-\[4\.6875vw\] {
+  margin-bottom: 4.6875vw;
+}
+
+.mt-\[3\.90625vw\] {
+  margin-top: 3.90625vw;
+}
+
+.mb-\[3\.5vw\] {
+  margin-bottom: 3.5vw;
 }
 
 .box-border {
@@ -859,6 +879,14 @@ video {
   height: 2px;
 }
 
+.h-\[25\.78125vw\] {
+  height: 25.78125vw;
+}
+
+.h-\[92\.12vh\] {
+  height: 92.12vh;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -903,6 +931,10 @@ video {
   width: 86.71vw;
 }
 
+.w-\[1\.30208333333vw\] {
+  width: 1.30208333333vw;
+}
+
 .w-\[91\.875vw\] {
   width: 91.875vw;
 }
@@ -927,8 +959,32 @@ video {
   width: 1.354vw;
 }
 
-.w-\[1\.30208333333vw\] {
-  width: 1.30208333333vw;
+.w-\[8\.96875vw\] {
+  width: 8.96875vw;
+}
+
+.w-\[6\.97916666667vw\] {
+  width: 6.97916666667vw;
+}
+
+.w-\[66\.3541666667vw\] {
+  width: 66.3541666667vw;
+}
+
+.w-\[16\.71875vw\] {
+  width: 16.71875vw;
+}
+
+.w-\[5\.75vw\] {
+  width: 5.75vw;
+}
+
+.w-\[20\.71875vw\] {
+  width: 20.71875vw;
+}
+
+.max-w-\[49\.7916666667vw\] {
+  max-width: 49.7916666667vw;
 }
 
 .flex-shrink {
@@ -1740,12 +1796,12 @@ video {
   word-break: keep-all;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-\[1\.04166666667vw\] {
   border-radius: 1.04166666667vw;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-t {
@@ -2046,23 +2102,23 @@ video {
   font-size: 1.30vw;
 }
 
-.text-\[1\.458vw\] {
-  font-size: 1.458vw;
-}
-
 .text-\[1\.5625vw\] {
   font-size: 1.5625vw;
+}
+
+.text-\[1\.458vw\] {
+  font-size: 1.458vw;
 }
 
 .font-\[300\] {
   font-weight: 300;
 }
 
-.font-bold {
+.font-\[700\] {
   font-weight: 700;
 }
 
-.font-\[700\] {
+.font-bold {
   font-weight: 700;
 }
 
@@ -2214,6 +2270,10 @@ video {
 
 .opacity-\[0\.5\] {
   opacity: 0.5;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .bg-blend-normal {

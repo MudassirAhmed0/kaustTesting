@@ -108,22 +108,11 @@
           />
           <div class="flex items-center gap-x-[1.2vw]">
             <span class="para uppercase">Read More</span>
-            <div
-              class="flex flex-col items-center transform rotate-[270deg] justify-center animateArrow"
-            >
-              <img
-                src="./assets/images/svgs/blackSmallestArrow.svg"
-                alt="smallestArrow"
-              />
-              <img
-                src="./assets/images/svgs/blackSmallArrow.svg"
-                alt="smallArrow"
-              />
-              <img
-                src="./assets/images/svgs/blackBigArrow.svg"
-                alt="bigArrow"
-              />
-            </div>
+            <img
+              src="./assets/images/svgs/arrowBlack.svg"
+              alt="Arrow"
+              class="w-[1.406vw]"
+            />
           </div>
         </div>
       </div>
@@ -140,10 +129,27 @@
         <div
           class="relative flex flex-col justify-center items-center text-white"
         >
-          <div class="mb-[2.8125vw] relative">
+          <div class="mb-[2.8125vw] relative ">
             <img
               src="./assets/images/svgs/videoBrandIcon.svg"
               alt="BrandIcon"
+              
+              class="w-[8.96875vw] vBI vBI1"
+            />
+            <img
+              src="./assets/images/svgs/videoBrandIcon2.svg"
+              alt="BrandIcon"
+              class="w-[8.96875vw] vBI vBI2 absolute top-0 opacity-0"
+            />
+            <img
+              src="./assets/images/svgs/videoBrandIcon3.svg"
+              alt="BrandIcon"
+              class="w-[8.96875vw] vBI vBI3 absolute top-0 opacity-0"
+            />
+            <img
+              src="./assets/images/svgs/videoBrandIcon4.svg"
+              alt="BrandIcon"
+              class="w-[8.96875vw] vBI vBI4 absolute top-0 opacity-0"
             />
             <img
               src="./assets/images/svgs/pauseIcon.svg"
@@ -212,19 +218,34 @@
       </div>
     </section>
     <style>
-      .swiper {
-  width: 600px;
-  height: 300px;
-}
+     
     </style>
-    <section class="py-[6.77083333333vw]">
-      <h3 class="heading">The Partners</h3>
-      <div class="swiper ">
+    <section class="py-[6.77083333333vw] flex flex-col justify-center items-center text-center">
+      <h3 class="heading ">The Partners</h3>
+      <div class="swiper mt-[3.75vw] w-[66.3541666667vw] ">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>  
+          <div class="swiper-slide">
+            <div class="flex flex-col">
+              <img src="./assets/images/svgs/partner1.svg" alt="Partner 1" class="w - [6.97916666667vw] w-[5.75vw] mx-auto mb-[2.5vw]">
+              <div class="mb-[4.6875vw] flex justify-between items-start">
+                <img src="./assets/images/svgs/quote.svg" alt="Quote">
+                <p class="para max-w-[49.7916666667vw]">NEOM is a region in northwest Saudi Arabia that is being sustainably developed from the ground up with the world’s most advanced technologies to redefine how people live, work, and play, and is a key project in Saudi Arabia’s Vision 2030. NEOM provides the conceptual and scientific framework and vision, government personnel and logistical support, and the 100-hectare Red Sea site and land-based locations for building coral nurseries.</p> 
+                <img src="./assets/images/svgs/quote.svg" alt="Quote" class="transform rotate-[180deg]"> 
+              </div>
+            </div>
+          </div>  
+          <div class="swiper-slide">
+            <div class="flex flex-col">
+              <img src="./assets/images/svgs/partner2.svg" alt="Partner 2" class="w - [16.71875vw] w-[20.71875vw] mx-auto mb-[3.5vw]">
+              <div class="mb-[4.6875vw] flex justify-between items-start">
+                <img src="./assets/images/svgs/quote.svg" alt="Quote">
+                <p class="para max-w-[49.7916666667vw]">NEOM is a region in northwest Saudi Arabia that is being sustainably developed from the ground up with the world’s most advanced technologies to redefine how people live, work, and play, and is a key project in Saudi Arabia’s Vision 2030. NEOM provides the conceptual and scientific framework and vision, government personnel and logistical support, and the 100-hectare Red Sea site and land-based locations for building coral nurseries.</p> 
+                <img src="./assets/images/svgs/quote.svg" alt="Quote" class="transform rotate-[180deg]"> 
+              </div>
+            </div>
+          </div>  
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -235,6 +256,18 @@
       
         
       </div>
+      <div class="flex items-center gap-x-[1.2vw] mt-[3.90625vw]">
+        <span class="para uppercase">View All Partners</span>
+        <img
+          src="./assets/images/svgs/arrowBlack.svg"
+          alt="Arrow"
+          class="w-[1.406vw]"
+        />
+      </div>
+    </section>
+
+    <section class="h-[92.12vh] relative">
+      <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
     </section>
 
     <script>
@@ -256,7 +289,30 @@
   
 });
     </script>
-    <script>
+  <script>
+    const videoBrandIcons = document.querySelectorAll('.vBI')
+    let activeVBI = 3
+    setInterval(()=>{
+      console.log(activeVBI)
+      activeVBI = activeVBI ===3 ?0 :activeVBI+ 1
+      console.log(activeVBI)
+      videoBrandIcons.forEach((item,index)=>{
+        if(index ==activeVBI){
+          item.classList.remove('opacity-0')
+        }else{
+          item.classList.add('opacity-0')
+        }
+      })
+    },800)
+    
+
+</script>
+
+<script>
+
+
+
+
       let el1 = document.getElementById("aBI1");
       let el2 = document.getElementById("aBI2");
       window.addEventListener("click", () => {
@@ -280,5 +336,39 @@
         }
       });
     </script>
+    <script>
+      function myMap() {
+    var mapProp = {  
+        // center: { lat: 28.739279, lng: 35.25263 },
+        center: { lat: 27.934363695177673, lng: 34.904101026832535 },
+        zoom: 12,
+        mapTypeId: 'satellite'
+        // disableDefaultUI: true,
+        // draggable: false, 
+        // zoomControl: false,
+  
+    };
+
+ 
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+   
+
+//   const infowindow = new google.maps.InfoWindow({
+//     content: contentString,
+//   });
+
+
+
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(27.934363695177673,34.904101026832535) ,
+        map: map,
+             
+    });
+
+}
+    </script>
+     <script
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyl0V6q-y690EdIhyuq6fdbvGHoFtGGE&callback=myMap"></script>
   </body>
 </html>

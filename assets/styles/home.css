@@ -21,14 +21,21 @@
     opacity: 1!important;
  }
  .swiper-button-prev,.swiper-button-next{
-    background: url(../images/svgs/awarnessCarouselArrow.svg) no-repeat!important;
+    background: url(../images/svgs/carouselBlackArrow.svg) no-repeat!important;
     background-size: cover!important;
     width: 0.729vw!important;
     height: 0.9375vw!important;
     top: unset!important;
 }
+.swiper-button-prev{
+   left: 26.5625vw!important;
+   bottom: 0.5208vw !important;;
+}
  .swiper-button-next{
     transform: rotate(180deg)!important;
+   right: 26.5625vw!important;
+   bottom: 0.5208vw !important;;
+
  }
  .swiper-button-prev::after,.swiper-button-next::after{
     display: none;
