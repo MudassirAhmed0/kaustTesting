@@ -6,7 +6,11 @@
  .videoOverlay{
     background: linear-gradient(0deg, rgba(5, 22, 50, 0.7), rgba(5, 22, 50, 0.7))
  }
-
+ .swiper-pagination-bullets{
+   bottom: 0.15625!important;
+   display: flex;
+   justify-content: center;
+ }
  .swiper-pagination-bullet{
     width: 1.354vw!important;
     opacity: 0.5!important;
@@ -28,15 +32,66 @@
     top: unset!important;
 }
 .swiper-button-prev{
-   left: 26.5625vw!important;
-   bottom: 0.5208vw !important;;
+   bottom: 0.20833333333vw !important;;
 }
  .swiper-button-next{
     transform: rotate(180deg)!important;
-   right: 26.5625vw!important;
-   bottom: 0.5208vw !important;;
+   bottom: 0.20833333333vw !important;;
 
  }
+.partnersCarousel .swiper-button-prev{
+   left: 26.5625vw!important;
+}
+ .partnersCarousel .swiper-button-next{
+   right: 26.5625vw!important;
+
+ }
+.photoCarousel .swiper-button-prev{
+   left: 40.15625vw!important; 
+}
+ .photoCarousel .swiper-button-next{ 
+   right: 40.15625vw!important; 
+
+ }
+
  .swiper-button-prev::after,.swiper-button-next::after{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photoCarousel .swiper-slide{
+   padding-top: 3.75vw!important;
+   transition: .5s;
+   width: 58.90625vw;
+   margin-right: 3.7vw;
+
+}
+.photoCarousel .swiper-slide-active{
+  
+   padding-top :0 !important;;
+}
+
+.majorCarousel .swiper-slide{
+   transition: .5s;
+   width: 20.4583333333vw;
+   margin-right:2.1875vw;
+   height: 29.84375vw;
+
+}
+.majorCarousel .swiper-slide-active{
+   width: 33.28125vw;
+}
+
