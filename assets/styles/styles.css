@@ -665,6 +665,10 @@ video {
   bottom: 4.89583333333vw;
 }
 
+.top-\[-83\%\] {
+  top: -83%;
+}
+
 .bottom-\[-2px\] {
   bottom: -2px;
 }
@@ -1011,6 +1015,14 @@ video {
   width: 17.2395833333vw;
 }
 
+.w-\[86\.9791666667vw\] {
+  width: 86.9791666667vw;
+}
+
+.w-\[44\.2708333333vw\] {
+  width: 44.2708333333vw;
+}
+
 .w-\[66\.3541666667vw\] {
   width: 66.3541666667vw;
 }
@@ -1091,6 +1103,11 @@ video {
 
 .rotate-\[180deg\] {
   --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[183deg\] {
+  --tw-rotate: 183deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2302,6 +2319,10 @@ video {
   line-height: 1.66666666667vw;
 }
 
+.leading-\[2\.34375vw\] {
+  line-height: 2.34375vw;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2657,7 +2678,7 @@ video {
   transition-delay: 500ms;
 }
 
-.duration-\[500ms\] {
+.duration-500 {
   transition-duration: 500ms;
 }
 
@@ -2718,6 +2739,8 @@ video {
 
 body{
   font-family: 'Nunito';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .myContainer{

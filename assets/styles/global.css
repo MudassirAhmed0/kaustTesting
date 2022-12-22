@@ -29,6 +29,8 @@
 
 body{
     font-family: 'Nunito';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 .myContainer{
     width: 84.375vw;
