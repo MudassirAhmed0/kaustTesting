@@ -15,18 +15,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <header class="absolute w-full top-[3.70vh]">
+    <header class="absolute w-full top-[3.70vh] z-[5]">
       <div class="myContainer flex justify-end items-center">
         <div class="flex items-center gap-x-[0.83vw]">
           <span
-            class="border-white font-[300] text-[1.30vw] text-white pr-[0.83vw] border-r transition-all duration-500 hover:opacity-[0.8]"
+            class="border-white font-[300] text-[1.30vw] text-white pr-[0.83vw] border-r transition-all duration-[500ms] hover:opacity-[0.8]"
           >
             AR
           </span>
           <img
             src="./assets/images/svgs/Menu.svg"
             alt="Menu"
-            class="w-[2.083vw] transition-all duration-500 hover:opacity-[0.8]"
+            class="w-[2.083vw] transition-all duration-[500ms] hover:opacity-[0.8]"
           />
         </div>
       </div>
@@ -162,7 +162,7 @@
         </div>
       </div>
     </section>
-    <section class="h-[120.555vh] bg-[#051632] relative">
+    <section class="h-[120.555vh] overflow-hidden bg-[#051632] relative">
       <img
         src="./assets/images/svgs/awarenessBrandIcons/brandIcon1.svg"
         id="aBI1"
@@ -217,7 +217,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-[10vw] pb-[11.6145833333vw] relative">
+    <section class="pt-[10vw] pb-[11.6145833333vw] bg-[#FBF8F1] relative">
       <div class="absolute top-0 w-full h-full flex items-center">
         <div class="myContainer flex flex-col">
           <span class="tagline text-[#F2A943]">
@@ -236,24 +236,70 @@
           </div>
         </div>
       </div>
-      <div class="w-[61.7708333333vw] ml-auto swiper majorCarousel">
+      <div class="w-[61.7708333333vw]  swiper majorCarousel ">
         <!-- Additional required wrapper -->
 
         <div class="swiper-wrapper">
-          <div class="swiper-slide relative">
-            <img src="./assets/images/Major-Components-Cards/5.jpg" alt="" class="absolute w-full h-full top-0 left-0">
+          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden ">
+            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
+            <img src="./assets/images/Major-Components-Cards/1.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
+            <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-[500ms]  top-[24.7916666667vw] ">
+              <h5 class="text-[1.45833333333vw] transition-all duration-[500ms] font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">KAUST’s Coral Nursery in NEOM:</h5>
+              <p class="para relative z-[3] transition-all duration-[500ms] opacity-0">KAUST will design, construct and operate the world's largest and most technologically advanced coral nursery at Haddah beach in NEOM with expected production of up to 400,000 corals per year. This nursery will be a long-term facility with infrastructure including life support systems and will employ advanced techniques for coral propagation at scale required to support the enhancement and restoration of the reefscape at Shushah and beyond.</p>
+              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-[500ms] w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
+            </div>
           </div>
-          <div class="swiper-slide relative">
-            <img src="./assets/images/Major-Components-Cards/5.jpg" alt="" class="absolute w-full h-full top-0 left-0">
+          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
+            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
+            <img src="./assets/images/Major-Components-Cards/2.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
+            <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-[500ms]  top-[24.7916666667vw] ">
+              <h5 class="text-[1.45833333333vw] transition-all duration-[500ms] font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
+                Shushah Island Reefscape:
+              </h5>
+              <p class="para relative z-[3] transition-all duration-[500ms] opacity-0">
+                KAUST will prepare, conserve, enhance, monitor and manage ~100 hectares of reefscape near Shushah Island. This will be done by dividing it up into operational grids for master planning purposes. Each grid's current condition will be mapped and assessed in detail. Master planning for the entire site will be done first and then a strategy will be developed for each grid. Some grids will have significant structural augmentation (placement of limestone reef boulders and/or coral pods) and a high density of coral outplants.
+              </p>
+              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-[500ms] w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
+            </div>
           </div>
-          <div class="swiper-slide relative">
-            <img src="./assets/images/Major-Components-Cards/5.jpg" alt="" class="absolute w-full h-full top-0 left-0">
+          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
+            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
+            <img src="./assets/images/Major-Components-Cards/3.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
+          <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-[500ms]  top-[24.7916666667vw] ">
+              <h5 class="text-[1.45833333333vw] transition-all duration-[500ms] font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
+                Digital Twin and Monitoring:
+              </h5>
+              <p class="para relative z-[3] transition-all duration-[500ms] opacity-0">
+                Using a suite of sensors and advanced data visualization tools, KAUST will track the performance and health of corals at different stages of growth, and adjust strategies as needed for optimal conditions. As part of the program, a digital twin of the reefscape will be created which will allow superlative, non-invasive educational, interactive digital experiences that will engage tourists, scientists and students around the world in marine conservation and Red Sea coral reefscapes.
+              </p>
+              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-[500ms] w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
+            </div>
           </div>
-          <div class="swiper-slide relative">
-            <img src="./assets/images/Major-Components-Cards/5.jpg" alt="" class="absolute w-full h-full top-0 left-0">
+          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
+            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
+            <img src="./assets/images/Major-Components-Cards/4.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
+          <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-[500ms]  top-[24.7916666667vw] ">
+              <h5 class="text-[1.45833333333vw] transition-all duration-[500ms] font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
+                Pilot Nursery:
+              </h5>
+              <p class="para relative z-[3] transition-all duration-[500ms] opacity-0">
+                We are creating an integrated reef restoration model, with the world’s largest and most advanced land-based coral nursery. A 1000 sq.m pilot facility, the KAUST Coral Nursery will test and trial techniques and technologies, optimize operational plans and train staff so that marine and dive operations are executed effectively once commissioned.
+              </p>
+              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-[500ms] w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
+            </div>
           </div>
-          <div class="swiper-slide relative">
-            <img src="./assets/images/Major-Components-Cards/5.jpg" alt="" class="absolute w-full h-full top-0 left-0">
+          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
+            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
+            <img src="./assets/images/Major-Components-Cards/5.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
+          <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-[500ms]  top-[24.7916666667vw] ">
+              <h5 class="text-[1.45833333333vw] transition-all duration-[500ms] font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
+                KAUST Shushah Island Research Center:
+              </h5>
+              <p class="para relative z-[3] transition-all duration-[500ms] opacity-0">
+                The research center, to be built at Shushah Island, will engage researchers and scientists-in-residence from the Kingdom and around the world with a state-of-the-art research facility to advance knowledge about corals and reefscape ecosystems. The facility will also support the reefscape program with monitoring and visualization efforts and will act as the base for the program’s dive operations.
+              </p>
+              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-[500ms] w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
+            </div>
           </div>
         </div>
 
@@ -310,6 +356,9 @@
         />
       </div>
     </section>
+    <section class="bg-[#051632] flex items-center justify-center h-[57.0833333333vw]">
+        <h1 class="heading text-white">Section To be Developed</h1>
+    </section>
     <section class="py-[6.77083333333vw] bg-[#F2E6D14D] flex flex-col justify-center items-center text-center">
       <h3 class="heading ">The Partners</h3>
       <div class="swiper mt-[3.75vw] w-[66.3541666667vw] partnersCarousel ">
@@ -356,15 +405,35 @@
       </div>
     </section>
 
-    <section class="h-[92.12vh] relative">
+    <section class="h-[60.9895833333vw] relative">
       <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
+      <span class="absolute bottom-[-2px] left-0 w-full h-[25.9895833333vw] mapOverlay"></span>
+      <span class="absolute top-0 left-0 w-full h-full bg-[#000] opacity-[0.3]"></span>
     </section>
-
+    <footer class="h-[10.4166666667vw] bg-[#051632] flex items-center ">
+      <div class="myContainer flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="./assets/images/logos/footer_logo.svg" alt="Footer Logo" class="w-[8.28125vw] mr-[3.38541666667vw]">
+          <div class="pl-[3.38541666667vw] flex h-[2.60416666667vw] border-l border-white items-center gap-x-[1.25vw]">
+            <img src="./assets/images/svgs/facebook.svg" alt="Facebook" class="w-[1.92708333333vw]">
+            <img src="./assets/images/svgs/twitter.svg" alt="Twitter" class="w-[1.92708333333vw]">
+            <img src="./assets/images/svgs/linkedin.svg" alt="Linkedin" class="w-[1.92708333333vw]">
+            <img src="./assets/images/svgs/instagram.svg" alt="Instagram" class="w-[1.92708333333vw]">
+          </div>
+        </div>
+        <div>
+          <span class="text-white text-[0.72916666666vw]">
+            King Abdullah University of Science and Technology. All rights reserved. © 2022
+          </span>
+        </div>
+      </div>
+    </footer>
     <script>
       const majorCarousel= new Swiper('.majorCarousel', {
-       
-       loop: false,
+      //  loop: true,
        slidesPerView: "auto",
+       slidesPerGroup: 0.5,
+       
        // If we need pagination
        pagination: {
          el: '.swiper-pagination',

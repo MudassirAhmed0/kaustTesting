@@ -83,7 +83,10 @@
   
    padding-top :0 !important;;
 }
-
+.majorCarousel{
+   margin-right: unset!important;
+   padding-bottom: 3.75vw!important;
+}
 .majorCarousel .swiper-slide{
    transition: .5s;
    width: 20.4583333333vw;
@@ -93,5 +96,40 @@
 }
 .majorCarousel .swiper-slide-active{
    width: 33.28125vw;
+
 }
 
+.majorOverlay{
+   background: linear-gradient(0deg, rgba(5, 22, 50, 0.5), rgba(5, 22, 50, 0.5));
+}
+
+.majorCarousel .swiper-slide-active .content{
+   top: 4.89583333333vw;
+   padding-left: 3.7vw;
+   padding-right: 3.7vw;
+}
+.majorCarousel .swiper-slide-active .content h5{
+   max-width: 700px;
+}
+.majorCarousel .swiper-slide-active .content p{
+   opacity: 1;
+}
+.majorCarousel .swiper-slide-active .content img{
+   opacity: 1;
+}
+
+.majorCarousel .swiper-pagination-bullets {
+   justify-content: start;
+   left: 2.6vw!important;
+}
+
+.majorCarousel .swiper-button-next{
+
+   right:43.75vw!important
+}
+
+
+
+.mapOverlay{
+   background: linear-gradient(180deg, rgba(5, 22, 50, 0) 0%, rgba(5, 22, 50, 0.9) 69.79%, #051632 100%);
+}
