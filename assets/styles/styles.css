@@ -661,10 +661,6 @@ video {
   top: 24.7916666667vw;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-\[4\.89583333333vw\] {
   bottom: 4.89583333333vw;
 }
@@ -783,12 +779,12 @@ video {
   margin-bottom: 3.5vw;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mr-\[3\.38541666667vw\] {
   margin-right: 3.38541666667vw;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .box-border {
@@ -907,8 +903,8 @@ video {
   height: 2px;
 }
 
-.h-\[92\.12vh\] {
-  height: 92.12vh;
+.h-\[57\.0833333333vw\] {
+  height: 57.0833333333vw;
 }
 
 .h-\[60\.9895833333vw\] {
@@ -925,10 +921,6 @@ video {
 
 .h-\[2\.60416666667vw\] {
   height: 2.60416666667vw;
-}
-
-.h-\[57\.0833333333vw\] {
-  height: 57.0833333333vw;
 }
 
 .min-h-\[100vh\] {
@@ -1043,8 +1035,8 @@ video {
   width: 1.92708333333vw;
 }
 
-.max-w-\[14\.6875vw\] {
-  max-width: 14.6875vw;
+.max-w-\[16\.6875vw\] {
+  max-width: 16.6875vw;
 }
 
 .max-w-\[43\.0208333333vw\] {
@@ -1053,10 +1045,6 @@ video {
 
 .max-w-\[49\.7916666667vw\] {
   max-width: 49.7916666667vw;
-}
-
-.max-w-\[16\.6875vw\] {
-  max-width: 16.6875vw;
 }
 
 .flex-shrink {
@@ -1930,16 +1918,16 @@ video {
   border-right-width: 1px;
 }
 
+.border-l {
+  border-left-width: 1px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
 
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-l {
-  border-left-width: 1px;
 }
 
 .border-solid {
@@ -1981,23 +1969,23 @@ video {
   background-color: rgb(5 22 50 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F2E6D14D\] {
-  background-color: #F2E6D14D;
-}
-
-.bg-\[rgb\(255\2c 0\2c 0\)\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#FBF8F1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(251 248 241 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F2E6D14D\] {
+  background-color: #F2E6D14D;
+}
+
 .bg-\[\#000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgb\(255\2c 0\2c 0\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2144,10 +2132,6 @@ video {
 
 .pb-\[11\.6145833333vw\] {
   padding-bottom: 11.6145833333vw;
-}
-
-.pb-\[3\.75vw\] {
-  padding-bottom: 3.75vw;
 }
 
 .pl-\[3\.38541666667vw\] {
