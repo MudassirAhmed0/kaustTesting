@@ -36,7 +36,7 @@
 }
 .goalCarousel .swiper-button-prev,.goalCarousel .swiper-button-next{
    background: url(../images/svgs/carouselWhiteArrow.svg) no-repeat!important;
-   
+   background-size: cover!important;
 }  
 
 .swiper-button-prev{
@@ -72,10 +72,21 @@
 }
 
 
+.animateArrow{
+   animation:arrowAnimation 1s infinite linear
+}
 
-
-
-
+@keyframes arrowAnimation {
+   0%{
+      top: 0px;
+   }
+   50%{
+      top:5px
+   }
+   100%{
+      top:0
+   }
+}
 
 
 
@@ -138,7 +149,7 @@
 
 .majorCarousel .swiper-button-next{
 
-   right:43.75vw!important
+   right:42.2vw!important
 }
 
 
@@ -153,3 +164,49 @@
    margin-bottom: 4.16666666667vw!important;
 }
 
+
+.goalCarousel .swiper-slide-active p{
+   opacity: 1;
+}
+.goalCarousel .swiper-slide{
+   transition-duration: 500ms!important;
+}
+
+
+.awarenessSlide.active .tagline{
+   top:0;
+   opacity: 1;
+}
+.awarenessSlide{
+   pointer-events: none;
+}
+.awarenessSlide.active{
+   pointer-events: initial;
+}
+.awarenessSlide.active .heading{
+   bottom:0;
+   opacity: 1;
+}
+.awarenessSlide.active p{
+   top:0;
+   opacity: 1;
+}
+.awarenessSlide.active .awarnenessReadMore{
+   opacity: 1;
+}
+.awarenessBrandIcon1.active{
+   transform: rotate(0deg);
+}
+.awarenessBrandIcon2.active{
+   transform: rotate(15deg);
+}
+.awarenessBrandIcon3.active{
+   transform: rotate(30deg);
+}
+.awarenessBrandIcon4.active{
+   transform: rotate(45deg);
+}
+
+.gmnoprint, .gm-fullscreen-control{
+   display: none!important;
+}

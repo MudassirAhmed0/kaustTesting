@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home || KAUST</title>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
-    <link rel="stylesheet" href="./assets//styles/home.css" />
+    <link rel="stylesheet" href="./assets/styles/home.css" />
+    <link rel="stylesheet" href="./assets/styles/aos.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="./assets/javascript/swiper-bundle.min.css"
     />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="absolute w-full top-[3.70vh] z-[5]">
       <div class="myContainer flex justify-end items-center">
-        <div class="flex items-center gap-x-[0.83vw]">
+        <div class="flex items-center">
           <span
-            class="border-white font-[300] text-[1.30vw] text-white pr-[0.83vw] border-r transition-all duration-500 hover:opacity-[0.8]"
+            class="font-[300] text-[1.30vw] text-white pr-[0.83vw] transition-all duration-500 hover:opacity-[0.8]"
           >
             AR
           </span>
+          <span class="h-[0.9375vw] w-[1px] bg-white mr-[0.83vw]"></span>
           <img
             src="./assets/images/svgs/Menu.svg"
             alt="Menu"
@@ -42,40 +42,60 @@
       <span class="absolute w-full h-full top-0 left-0 heroOverlay"></span>
       <div class="myContainer relative text-white pt-[16.29vh]">
         <img
+        data-aos="fade"
+        data-aos-duration="800"
+        data-aos-delay="200"
           src="./assets/images/logos/logo.svg"
           alt="Logo"
           class="w-[19.79vw]"
         />
-        <h1 class="heading w-[39.58vw] mt-[3.64vw] mb-[1.145vw]">
+        <h1 data-aos="fade-up"
+        data-aos-duration="800" data-aos-delay="600" class="heading w-[39.58vw] mt-[3.64vw] mb-[1.145vw]">
           World’s Largest Coral Garden in the Red Sea
         </h1>
-        <p class="para w-[37.23vw]">
+        <p data-aos="fade-down"
+        data-aos-duration="800" data-aos-delay="600" class="para w-[37.23vw]">
           The Shusha Island Coral Park will become a global center to showcase
           innovations to protect and restore coral reefs
         </p>
       </div>
       <div
-        class="w-[1.4vw] h-[1.45vw] absolute tranform flex flex-col items-center justify-center translate-x-[-50%] left-[50%] bottom-[4.07vh] animateArrow"
+      id="scrollBelow"
+        class="w-[1.4vw] h-[1.45vw] cursor-pointer absolute tranform flex flex-col items-center justify-center translate-x-[-50%] left-[50%] bottom-[4.07vh]"
       >
-        <img src="./assets/images/svgs/smallestArrow.svg" alt="smallestArrow" />
-        <img src="./assets/images/svgs/smallArrow.svg" alt="smallArrow" />
-        <img src="./assets/images/svgs/bigArrow.svg" alt="bigArrow" />
+        <img
+          src="./assets/images/svgs/smallestArrow.svg"
+          alt="smallestArrow"
+          class="min-h-[0.26041666666vw] min-w-[0.52083333333vw] h-[0.26041666666vw] w-[0.52083333333vw] relative"
+        />
+        <img
+          src="./assets/images/svgs/smallArrow.svg"
+          alt="smallArrow"
+          class="min-h-[0.4453125vw] min-w-[0.94583333333vw] h-[0.4453125vw] w-[0.94583333333vw] relative animateArrow"
+        />
+        <img
+          src="./assets/images/svgs/bigArrow.svg"
+          alt="bigArrow"
+          class="min-h-[0.69479166666vw] min-w-[1.45833333333vw] h-[0.69479166666vw] w-[1.45833333333vw] relative animateArrow"
+        />
       </div>
     </section>
     <section class="py-[13.88vh] bg-white relative overflow-hidden">
       <img
         src="./assets/images/svgs/about.svg"
         alt="Brand Icon"
+        data-aos="fade" data-aos-duration="800"
+            data-aos-delay="700"
         class="absolute right-0 bottom-[-41.92vw] w-[34.218vw]"
       />
       <div class="myContainer">
         <div class="w-[62.5vw]">
-          <span class="tagline"> Overview </span>
-          <h3 class="heading">About the Project</h3>
+          <span class="tagline" data-aos="fade-up" data-aos-duration="800"> Overview </span>
+          <h3 class="heading" data-aos="fade-down" data-aos-duration="800">About the Project</h3>
           <div
             class="mt-[1.666vw] flex flex-col gap-y-[1.145vw] text-[#666666]"
           >
-            <p class="para">
+            <p class="para" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               The KAUST Reefscape Restoration Initiative is a large-scale coral
               reef restoration program in the Red Sea in the Kingdom of Saudi
               Arabia (KSA), begun in 2021 and funded by King Abdullah University
@@ -88,7 +108,7 @@
               up with the world’s most advanced technologies to redefine how
               people live, work, and play.
             </p>
-            <p class="para">
+            <p class="para" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
               The initiative will begin with a 100-hectare reef restoration
               project at Shushah Island. This will be a global demonstration of
               coral restoration that integrates innovative, in-Kingdom and
@@ -105,14 +125,53 @@
             src="./assets/images/svgs/signature.svg"
             alt="Signature"
             class="w-[8.020vw] my-[1.70vw] ml-auto"
+            data-aos="fade" data-aos-duration="800"
+            data-aos-delay="400"
           />
-          <div class="flex items-center gap-x-[1.2vw]">
-            <span class="para uppercase">Read More</span>
-            <img
-              src="./assets/images/svgs/arrowBlack.svg"
-              alt="Arrow"
-              class="w-[1.406vw]"
-            />
+          <div data-aos="fade" data-aos-duration="800"
+          data-aos-delay="400" class="flex items-center gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]"
+              >Read More</span
+            >
+            <div class="flex items-center">
+              <svg
+                class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+                viewBox="0 0 5 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.3"
+                  class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+                />
+              </svg>
+
+              <svg
+                class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+                viewBox="0 0 9 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+                />
+              </svg>
+
+              <svg
+                viewBox="0 0 14 28"
+                class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -129,11 +188,10 @@
         <div
           class="relative flex flex-col justify-center items-center text-white"
         >
-          <div class="mb-[2.8125vw] relative ">
+          <div class="mb-[2.8125vw] relative">
             <img
               src="./assets/images/svgs/videoBrandIcon.svg"
               alt="BrandIcon"
-              
               class="w-[8.96875vw] vBI vBI1"
             />
             <img
@@ -157,62 +215,324 @@
               class="w-[1.30208333333vw] absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
             />
           </div>
-          <h4 class="heading mb-[0.52083333333vw]">100 Hectares</h4>
-          <p class="text-[1.5625vw] font-[700]">On The Shores Of The Red Sea</p>
+          <h4 class="heading mb-[0.52083333333vw]" data-aos="fade-up" data-aos-duration="800">100 Hectares</h4>
+          <p class="text-[1.5625vw] font-[700]"  data-aos="fade-down" data-aos-duration="800">On The Shores Of The Red Sea</p>
         </div>
       </div>
     </section>
-    <section class="h-[120.555vh] overflow-hidden bg-[#051632] relative">
-      <img
-        src="./assets/images/svgs/awarenessBrandIcons/brandIcon1.svg"
-        id="aBI1"
-        alt="awarenessBrandIcons"
-        class="absolute w-[91.875vw] transition-all"
-      />
-      <img
-        src="./assets/images/svgs/awarenessBrandIcons/brandIcon2.svg"
-        id="aBI2"
-        alt="awarenessBrandIcons"
-        class="opacity-[0] absolute w-[91.875vw] transition-all"
-      />
-      <div class="absolute w-full bottom-[14.3229vw] left-0">
+    <section id='awarenessContainer' class="h-[67.7604166667vw] overflow-hidden bg-[#051632] relative">
+      <div class="absolute w-full h-full top-0 left-0">
+        <img
+          src="./assets/images/svgs/awarenessBrandIcons/Union-1.svg"
+          alt="awarenessBrandIcons"
+          class="awarenessBrandIcon awarenessBrandIcon1 absolute min-w-[126.614583333vw] w-[126.614583333vw] top-[-13.9%] left-[-32.92%] transition-all duration-[800ms] transform rotate-[45deg] active"
+        />
+      </div>
+      <div class="absolute w-full h-full top-0 left-0">
+        <img
+          src="./assets/images/svgs/awarenessBrandIcons/Union-2.svg"
+          alt="awarenessBrandIcons"
+          class="hidden awarenessBrandIcon awarenessBrandIcon2 absolute min-w-[126.614583333vw] w-[126.614583333vw] top-[-13.9%] left-[-32.92%] transition-all duration-[800ms] transform"
+        />
+      </div>
+      <div class="absolute w-full h-full top-0 left-0">
+        <img
+          src="./assets/images/svgs/awarenessBrandIcons/Union-3.svg"
+          alt="awarenessBrandIcons"
+          class="hidden awarenessBrandIcon awarenessBrandIcon3 absolute min-w-[126.614583333vw] w-[126.614583333vw] top-[-13.9%] left-[-32.92%] transition-all duration-[800ms] rotate-[15deg]"
+        />
+      </div>
+      <div class="absolute w-full h-full top-0 left-0">
+        <img
+          src="./assets/images/svgs/awarenessBrandIcons/Union-4.svg"
+          alt="awarenessBrandIcons"
+          class="hidden awarenessBrandIcon awarenessBrandIcon4 absolute min-w-[126.614583333vw] w-[126.614583333vw] top-[-13.9%] left-[-32.92%] transition-all duration-[800ms] rotate-[30deg]"
+        />
+      </div>
+      <div
+        class="absolute w-full bottom-[14.3229vw] left-0 awarenessSlide "
+      >
         <div class="myContainer text-white">
-          <span class="tagline"> Awareness </span>
-          <h3 class="heading">Guiding Principles</h3>
+          <span
+            class="tagline transition-all duration-[800ms] opacity-0 top-[50px] relative"
+          >
+            Awareness
+          </span>
+          <h3
+            class="heading transition-all duration-[800ms] opacity-0 bottom-[70px] relative"
+          >
+            Guiding Principles
+          </h3>
           <p
-            class="text-[1.458vw] leading-[1.9791vw] mb-[3.75vw] mt-[1.770vw] text-white w-[41.66vw]"
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw] delay-[500ms] mb-[3.75vw] transition-all duration-[800ms] opacity-0 top-[70px] mt-[1.770vw] text-white w-[41.66vw]"
           >
             Support NEOM and Saudi Arabia’s goals to study and protect Red Sea
             marine environments
           </p>
-          <div class="flex items-center gap-x-[1.2vw]">
-            <span class="para uppercase">Read More</span>
-            <img
-              src="./assets/images/svgs/arrowWhite.svg"
-              alt="Arrow"
-              class="w-[1.406vw]"
-            />
+          
+          <div class="flex items-center transition-all duration-[800ms]  delay-[800ms] awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+              <svg
+                class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+                viewBox="0 0 5 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.3"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+                />
+              </svg>
+    
+              <svg
+                class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+                viewBox="0 0 9 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+                />
+              </svg>
+    
+              <svg
+                viewBox="0 0 14 28"
+                class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-
+      <div
+        class="absolute w-full bottom-[12.3958333333vw] left-0 awarenessSlide"
+      >
+        <div class="myContainer text-white">
+          <span
+            class="tagline transition-all duration-[800ms] opacity-0 top-[50px] relative"
+          >
+            Awareness
+          </span>
+          <h3
+            class="heading transition-all duration-[800ms] opacity-0 bottom-[70px] relative"
+          >
+            Guiding Principles
+          </h3>
+          <p
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw] delay-[500ms] mb-[3.75vw] mt-[1.770vw] text-white w-[43.8020833333vw] transition-all duration-[800ms] opacity-0 top-[70px]"
+          >
+            Be a global showcase of coral reef restoration, demonstrating
+            innovative approaches and technologies designed to accelerate coral
+            reef conservation, restoration and enhancement solutions in a
+            changing climate, and that can be applied to other reef ecosystems
+            around the world
+          </p>
+           <div class="flex items-center transition-all duration-[800ms]  delay-[800ms] awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+              <svg
+                class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+                viewBox="0 0 5 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.3"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+                />
+              </svg>
+    
+              <svg
+                class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+                viewBox="0 0 9 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+                />
+              </svg>
+    
+              <svg
+                viewBox="0 0 14 28"
+                class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute w-full bottom-[14.3229vw] left-0 awarenessSlide">
+        <div class="myContainer text-white">
+          <span
+            class="tagline transition-all duration-[800ms] opacity-0 top-[50px] relative"
+          >
+            Awareness
+          </span>
+          <h3
+            class="heading transition-all duration-[800ms] opacity-0 bottom-[70px] relative"
+          >
+            Guiding Principles
+          </h3>
+          <p
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw] delay-[500ms] mb-[3.75vw] mt-[1.770vw] text-white w-[41.66vw] transition-all duration-[800ms] opacity-0 top-[70px]"
+          >
+            Support the exploration, discovery and regeneration of coral
+            reefscapes and surrounding ecosystems in the Red Sea
+          </p>
+           <div class="flex items-center transition-all duration-[800ms]  delay-[800ms] awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+              <svg
+                class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+                viewBox="0 0 5 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.3"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+                />
+              </svg>
+    
+              <svg
+                class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+                viewBox="0 0 9 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+                />
+              </svg>
+    
+              <svg
+                viewBox="0 0 14 28"
+                class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute w-full bottom-[13.3333333333vw] left-0 awarenessSlide"
+      >
+        <div class="myContainer text-white">
+          <span
+            class="tagline transition-all duration-[800ms] opacity-0 top-[50px] relative"
+          >
+            Awareness
+          </span>
+          <h3
+            class="heading transition-all duration-[800ms] opacity-0 bottom-[70px] relative"
+          >
+            Guiding Principles
+          </h3>
+          <p
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw] delay-[500ms] mb-[3.75vw] mt-[1.770vw] text-white w-[41.66vw] transition-all duration-[800ms] opacity-0 top-[70px]"
+          >
+            Provide educational, digital interactive experiences about the
+            Kingdom’s coral reefscapes to scientists, students, tourists and
+            guests through both hands-on and immersive virtual experiences
+          </p>
+           <div class="flex items-center transition-all duration-[800ms]  delay-[800ms] awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+              <svg
+                class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+                viewBox="0 0 5 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.3"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+                />
+              </svg>
+    
+              <svg
+                class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+                viewBox="0 0 9 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+                />
+              </svg>
+    
+              <svg
+                viewBox="0 0 14 28"
+                class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="absolute w-full bottom-[6.979vw]">
         <div class="flex gap-x-[3.333vw] items-center myContainer">
           <img
             src="./assets/images/svgs/awarnessCarouselArrow.svg"
             alt="Arrow"
-            class="w-[0.729vw]"
+            class="w-[0.729vw] cursor-pointer awarenessPrevArrow"
           />
-          <div class="flex gap-x-[0.93vw]">
-            <span class="bg-white h-[2px] w-[4.270vw]"></span>
-            <span class="bg-white h-[2px] w-[1.354vw] opacity-[0.5]"></span>
-            <span class="bg-white h-[2px] w-[1.354vw] opacity-[0.5]"></span>
-            <span class="bg-white h-[2px] w-[1.354vw] opacity-[0.5]"></span>
+          <div class="flex gap-x-[0.93vw] awarenessPagination">
+            <span
+              class="bg-white h-[2px] w-[4.270vw] transition-all duration-500"
+            ></span>
+            <span
+              class="bg-white h-[2px] w-[1.354vw] transition-all duration-500 opacity-[0.5]"
+            ></span>
+            <span
+              class="bg-white h-[2px] w-[1.354vw] transition-all duration-500 opacity-[0.5]"
+            ></span>
+            <span
+              class="bg-white h-[2px] w-[1.354vw] transition-all duration-500 opacity-[0.5]"
+            ></span>
           </div>
           <img
             src="./assets/images/svgs/awarnessCarouselArrow.svg"
             alt="Arrow"
-            class="transform w-[0.729vw] rotate-[180deg]"
+            class="transform w-[0.729vw] rotate-[180deg] cursor-pointer awarenessNextArrow"
           />
         </div>
       </div>
@@ -220,433 +540,766 @@
     <section class="pt-[10vw] pb-[11.6145833333vw] bg-[#FBF8F1] relative">
       <div class="absolute top-0 w-full h-full flex items-center">
         <div class="myContainer flex flex-col">
-          <span class="tagline text-[#F2A943]">
-            Elements
-          </span>
-          <h4 class="heading w-[22.4479166667vw] mb-[3.75vw]">
+          <span class="tagline text-[#F2A943]" data-aos="fade-up" data-aos-duration="800"> Elements </span>
+          <h4 class="heading w-[22.4479166667vw] mb-[3.75vw]" data-aos="fade-down" data-aos-duration="800">
             Major Components
           </h4>
-          <div class="flex items-center gap-x-[1.2vw]">
-            <span class="para uppercase">Read More</span>
+          <div data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="flex items-center gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+              <svg
+                class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+                viewBox="0 0 5 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.3"
+                  class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+                />
+              </svg>
+
+              <svg
+                class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+                viewBox="0 0 9 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+                />
+              </svg>
+
+              <svg
+                viewBox="0 0 14 28"
+                class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+                  d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[61.7708333333vw] swiper majorCarousel">
+        <!-- Additional required wrapper -->
+
+        <div class="swiper-wrapper" >
+          <div
+          data-aos="fade" data-aos-duration="800" data-aos-delay="600"
+            class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden"
+          >
+            <span
+              class="absolute w-full h-full top-0 left-0 majorOverlay"
+            ></span>
             <img
-              src="./assets/images/svgs/arrowBlack.svg"
-              alt="Arrow"
-              class="w-[1.406vw]"
+              src="./assets/images/Major-Components-Cards/1.jpg"
+              alt="Major Component Card"
+              class="absolute w-full h-full top-0 left-0 object-cover"
+            />
+            <div
+              class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500 top-[24.7916666667vw]"
+            >
+              <h5
+                class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw]"
+              >
+                KAUST’s Coral Nursery in NEOM:
+              </h5>
+              <p
+                class="para relative z-[3] transition-all duration-500 opacity-0"
+              >
+                KAUST will design, construct and operate the world's largest and
+                most technologically advanced coral nursery at Haddah beach in
+                NEOM with expected production of up to 400,000 corals per year.
+                This nursery will be a long-term facility with infrastructure
+                including life support systems and will employ advanced
+                techniques for coral propagation at scale required to support
+                the enhancement and restoration of the reefscape at Shushah and
+                beyond.
+              </p>
+              <img
+                src="./assets/images/Major-Components-Cards/Union.svg"
+                alt="BrandIcon"
+                class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0"
+              />
+            </div>
+          </div>
+          <div
+          data-aos="fade" data-aos-duration="800" data-aos-delay="900"
+            class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden"
+          >
+            <span
+              class="absolute w-full h-full top-0 left-0 majorOverlay"
+            ></span>
+            <img
+              src="./assets/images/Major-Components-Cards/2.jpg"
+              alt="Major Component Card"
+              class="absolute w-full h-full top-0 left-0 object-cover"
+            />
+            <div
+              class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500 top-[24.7916666667vw]"
+            >
+              <h5
+                class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw]"
+              >
+                Shushah Island Reefscape:
+              </h5>
+              <p
+                class="para relative z-[3] transition-all duration-500 opacity-0"
+              >
+                KAUST will prepare, conserve, enhance, monitor and manage ~100
+                hectares of reefscape near Shushah Island. This will be done by
+                dividing it up into operational grids for master planning
+                purposes. Each grid's current condition will be mapped and
+                assessed in detail. Master planning for the entire site will be
+                done first and then a strategy will be developed for each grid.
+                Some grids will have significant structural augmentation
+                (placement of limestone reef boulders and/or coral pods) and a
+                high density of coral outplants.
+              </p>
+              <img
+                src="./assets/images/Major-Components-Cards/Union.svg"
+                alt="BrandIcon"
+                class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0"
+              />
+            </div>
+          </div>
+          <div
+          data-aos="fade" data-aos-duration="800" data-aos-delay="1200"
+            class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden"
+          >
+            <span
+              class="absolute w-full h-full top-0 left-0 majorOverlay"
+            ></span>
+            <img
+              src="./assets/images/Major-Components-Cards/3.jpg"
+              alt="Major Component Card"
+              class="absolute w-full h-full top-0 left-0 object-cover"
+            />
+            <div
+              class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500 top-[24.7916666667vw]"
+            >
+              <h5
+                class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw]"
+              >
+                Digital Twin and Monitoring:
+              </h5>
+              <p
+                class="para relative z-[3] transition-all duration-500 opacity-0"
+              >
+                Using a suite of sensors and advanced data visualization tools,
+                KAUST will track the performance and health of corals at
+                different stages of growth, and adjust strategies as needed for
+                optimal conditions. As part of the program, a digital twin of
+                the reefscape will be created which will allow superlative,
+                non-invasive educational, interactive digital experiences that
+                will engage tourists, scientists and students around the world
+                in marine conservation and Red Sea coral reefscapes.
+              </p>
+              <img
+                src="./assets/images/Major-Components-Cards/Union.svg"
+                alt="BrandIcon"
+                class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0"
+              />
+            </div>
+          </div>
+          <div
+
+            class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden"
+          >
+            <span
+              class="absolute w-full h-full top-0 left-0 majorOverlay"
+            ></span>
+            <img
+              src="./assets/images/Major-Components-Cards/4.jpg"
+              alt="Major Component Card"
+              class="absolute w-full h-full top-0 left-0 object-cover"
+            />
+            <div
+              class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500 top-[24.7916666667vw]"
+            >
+              <h5
+                class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw]"
+              >
+                Pilot Nursery:
+              </h5>
+              <p
+                class="para relative z-[3] transition-all duration-500 opacity-0"
+              >
+                We are creating an integrated reef restoration model, with the
+                world’s largest and most advanced land-based coral nursery. A
+                1000 sq.m pilot facility, the KAUST Coral Nursery will test and
+                trial techniques and technologies, optimize operational plans
+                and train staff so that marine and dive operations are executed
+                effectively once commissioned.
+              </p>
+              <img
+                src="./assets/images/Major-Components-Cards/Union.svg"
+                alt="BrandIcon"
+                class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0"
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden"
+          >
+            <span
+              class="absolute w-full h-full top-0 left-0 majorOverlay"
+            ></span>
+            <img
+              src="./assets/images/Major-Components-Cards/5.jpg"
+              alt="Major Component Card"
+              class="absolute w-full h-full top-0 left-0 object-cover"
+            />
+            <div
+              class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500 top-[24.7916666667vw]"
+            >
+              <h5
+                class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw]"
+              >
+                KAUST Shushah Island Research Center:
+              </h5>
+              <p
+                class="para relative z-[3] transition-all duration-500 opacity-0"
+              >
+                The research center, to be built at Shushah Island, will engage
+                researchers and scientists-in-residence from the Kingdom and
+                around the world with a state-of-the-art research facility to
+                advance knowledge about corals and reefscape ecosystems. The
+                facility will also support the reefscape program with monitoring
+                and visualization efforts and will act as the base for the
+                program’s dive operations.
+              </p>
+              <img
+                src="./assets/images/Major-Components-Cards/Union.svg"
+                alt="BrandIcon"
+                class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" ></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#051632] flex flex-col relative overflow-hidden justify-center h-[57.0833333333vw]"
+    >
+      <div class="absolute top-0 w-full h-full">
+        <img
+          src="./assets/images/svgs/projectGoalsBrandIcon.svg"
+          id="goalBI"
+          alt="BrandIcon"
+          class="absolute w-[86.9791666667vw] left-[50%] top-[-83%] transition-all duration-[1000ms] tranform translate-x-[-50%] rotate-[180deg]"
+        />
+      </div>
+      <div class="mt-[3.90625vw] flex items-center flex-col text-center">
+        <span class="tagline text-[#F2A943]"> Roadmap </span>
+        <h4 class="heading text-white">Project Goals</h4>
+      </div>
+      <span
+        class="para mt-[2.84895833333vw] text-white text-center"
+        id="goals-pagination-fraction"
+      >
+        <span class="font-[700]">1 </span><span>/ 7</span>
+      </span>
+      <div class="swiper goalCarousel w-[44.2708333333vw]">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide text-white">
+            <p
+              class="text-[1.5625vw] leading-[2.34375vw] text-center transition-all duration-[800ms] opacity-0"
+            >
+              Conserve, restore and enhance a 100-hectare reefscape around
+              Shushah Island before moving to supporting restoration across the
+              region.
+            </p>
+          </div>
+          <div class="swiper-slide text-white">
+            <p
+              class="text-[1.5625vw] leading-[2.34375vw] text-center transition-all duration-[800ms] opacity-0"
+            >
+              Conserve, 2restore and enhance a 100-hectare reefscape around
+              Shushah Island before moving to supporting restoration across the
+              region.
+            </p>
+          </div>
+          <div class="swiper-slide text-white">
+            <p
+              class="text-[1.5625vw] leading-[2.34375vw] text-center transition-all duration-[800ms] opacity-0"
+            >
+              Conserve, 3restore and enhance a 100-hectare reefscape around
+              Shushah Island before moving to supporting restoration across the
+              region.
+            </p>
+          </div>
+          <div class="swiper-slide text-white">
+            <p
+              class="text-[1.5625vw] leading-[2.34375vw] text-center transition-all duration-[800ms] opacity-0"
+            >
+              Conserve, restore and enhance a 100-hectare reefscape around
+              Shushah Island before moving to supporting restoration across the
+              region.
+            </p>
+          </div>
+          <div class="swiper-slide text-white">
+            <p
+              class="text-[1.5625vw] leading-[2.34375vw] text-center transition-all duration-[800ms] opacity-0"
+            >
+              Conserve, restore and enhance a 100-hectare reefscape around
+              Shushah Island before moving to supporting restoration across the
+              region.
+            </p>
+          </div>
+          <div class="swiper-slide text-white">
+            <p
+              class="text-[1.5625vw] leading-[2.34375vw] text-center transition-all duration-[800ms] opacity-0"
+            >
+              Conserve, restore and enhance a 100-hectare reefscape around
+              Shushah Island before moving to supporting restoration across the
+              region.
+            </p>
+          </div>
+          <div class="swiper-slide text-white">
+            <p
+              class="text-[1.5625vw] leading-[2.34375vw] text-center transition-all duration-[800ms] opacity-0"
+            >
+              Conserve, restore and enhance a 100-hectare reefscape around
+              Shushah Island before moving to supporting restoration across the
+              region.
+            </p>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section
+      class="py-[8.85416666667vw] flex flex-col justify-center items-center text-center"
+    >
+      <h3 class="heading" data-aos="fade-up" data-aos-duration="800">Photo Gallery</h3>
+      <p
+      data-aos="fade-down" data-aos-duration="800"
+        class="text-[1.30208333333vw] leading-[1.66666666667vw] mt-[1.66666666667vw] text-[#666666] max-w-[43.0208333333vw]"
+      >
+        The gallery below takes you to some pictures from Shushah Island and the
+        coral reef around.
+      </p>
+      <div class="swiper mt-[3.75vw] w-full photoCarousel">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div  data-aos="fade" data-aos-duration="800" class="swiper-slide">
+            <img
+              src="./assets/images/photo-gallery/1.jpg"
+              alt="Photo Gallery"
+            />
+          </div>
+         
+          <div data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="swiper-slide">
+            <img
+              src="./assets/images/photo-gallery/3.jpg"
+              alt="Photo Gallery"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/photo-gallery/4.jpg"
+              alt="Photo Gallery"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/photo-gallery/5.jpg"
+              alt="Photo Gallery"
+            />
+          </div>
+          <!-- <div class="swiper-slide">
+            <img
+              src="./assets/images/photo-gallery/6.jpg"
+              alt="Photo Gallery"
+            />
+          </div> -->
+          <div  data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="swiper-slide">
+            <img
+              src="./assets/images/photo-gallery/2.jpg"
+              alt="Photo Gallery"
             />
           </div>
         </div>
-      </div>
-      <div class="w-[61.7708333333vw]  swiper majorCarousel ">
-        <!-- Additional required wrapper -->
-
-        <div class="swiper-wrapper">
-          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden ">
-            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
-            <img src="./assets/images/Major-Components-Cards/1.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
-            <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500  top-[24.7916666667vw] ">
-              <h5 class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">KAUST’s Coral Nursery in NEOM:</h5>
-              <p class="para relative z-[3] transition-all duration-500 opacity-0">KAUST will design, construct and operate the world's largest and most technologically advanced coral nursery at Haddah beach in NEOM with expected production of up to 400,000 corals per year. This nursery will be a long-term facility with infrastructure including life support systems and will employ advanced techniques for coral propagation at scale required to support the enhancement and restoration of the reefscape at Shushah and beyond.</p>
-              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
-            </div>
-          </div>
-          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
-            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
-            <img src="./assets/images/Major-Components-Cards/2.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
-            <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500  top-[24.7916666667vw] ">
-              <h5 class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
-                Shushah Island Reefscape:
-              </h5>
-              <p class="para relative z-[3] transition-all duration-500 opacity-0">
-                KAUST will prepare, conserve, enhance, monitor and manage ~100 hectares of reefscape near Shushah Island. This will be done by dividing it up into operational grids for master planning purposes. Each grid's current condition will be mapped and assessed in detail. Master planning for the entire site will be done first and then a strategy will be developed for each grid. Some grids will have significant structural augmentation (placement of limestone reef boulders and/or coral pods) and a high density of coral outplants.
-              </p>
-              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
-            </div>
-          </div>
-          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
-            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
-            <img src="./assets/images/Major-Components-Cards/3.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
-          <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500  top-[24.7916666667vw] ">
-              <h5 class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
-                Digital Twin and Monitoring:
-              </h5>
-              <p class="para relative z-[3] transition-all duration-500 opacity-0">
-                Using a suite of sensors and advanced data visualization tools, KAUST will track the performance and health of corals at different stages of growth, and adjust strategies as needed for optimal conditions. As part of the program, a digital twin of the reefscape will be created which will allow superlative, non-invasive educational, interactive digital experiences that will engage tourists, scientists and students around the world in marine conservation and Red Sea coral reefscapes.
-              </p>
-              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
-            </div>
-          </div>
-          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
-            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
-            <img src="./assets/images/Major-Components-Cards/4.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
-          <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500  top-[24.7916666667vw] ">
-              <h5 class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
-                Pilot Nursery:
-              </h5>
-              <p class="para relative z-[3] transition-all duration-500 opacity-0">
-                We are creating an integrated reef restoration model, with the world’s largest and most advanced land-based coral nursery. A 1000 sq.m pilot facility, the KAUST Coral Nursery will test and trial techniques and technologies, optimize operational plans and train staff so that marine and dive operations are executed effectively once commissioned.
-              </p>
-              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
-            </div>
-          </div>
-          <div class="swiper-slide relative rounded-[1.04166666667vw] overflow-hidden">
-            <span class="absolute w-full h-full top-0 left-0 majorOverlay"></span>
-            <img src="./assets/images/Major-Components-Cards/5.jpg" alt="Major Component Card" class="absolute w-full h-full top-0 left-0 object-cover">
-          <div class="absolute w-full content h-full top-0 px-[1.66666666667vw] text-white transition-all duration-500  top-[24.7916666667vw] ">
-              <h5 class="text-[1.45833333333vw] transition-all duration-500 font-[700] leading-[1.66666666667vw] max-w-[16.6875vw] mb-[1.66666666667vw] ">
-                KAUST Shushah Island Research Center:
-              </h5>
-              <p class="para relative z-[3] transition-all duration-500 opacity-0">
-                The research center, to be built at Shushah Island, will engage researchers and scientists-in-residence from the Kingdom and around the world with a state-of-the-art research facility to advance knowledge about corals and reefscape ecosystems. The facility will also support the reefscape program with monitoring and visualization efforts and will act as the base for the program’s dive operations.
-              </p>
-              <img src="./assets/images/Major-Components-Cards/Union.svg" alt="BrandIcon" class="transition-all opacity-0 delay-500 duration-500 w-[17.2395833333vw] absolute bottom-[4.89583333333vw] left-0">
-            </div>
-          </div>
-        </div>
-
-         <!-- If we need pagination -->
-         <div class="swiper-pagination">
-         </div>
-      
-         <!-- If we need navigation buttons -->
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div>
-      </div>
-    </section>
-    <section class="py-[8.85416666667vw] flex flex-col justify-center items-center text-center">
-      <h3 class="heading ">Photo Gallery</h3>
-      <p class="text-[1.458vw] leading-[1.66666666667vw] text-[#666666] max-w-[43.0208333333vw]">
-        The gallery below takes you to some pictures from Shushah Island and the coral reef around.
-      </p>
-      <div class="swiper mt-[3.75vw] w-full photoCarousel ">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper ">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="./assets/images/photo-gallery/1.jpg" alt="Photo Gallery">
-          </div>   
-          <div class="swiper-slide">
-            <img src="./assets/images/photo-gallery/1.jpg" alt="Photo Gallery">
-          </div>   
-          <div class="swiper-slide">
-            <img src="./assets/images/photo-gallery/1.jpg" alt="Photo Gallery">
-          </div>   
-          <div class="swiper-slide">
-            <img src="./assets/images/photo-gallery/1.jpg" alt="Photo Gallery">
-          </div>   
-          <div class="swiper-slide">
-            <img src="./assets/images/photo-gallery/1.jpg" alt="Photo Gallery">
-          </div>   
-          
-        </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        
-      </div>
-      <div class="flex items-center gap-x-[1.2vw] mt-[3.90625vw]">
-        <span class="para uppercase">View All</span>
-        <img
-          src="./assets/images/svgs/arrowBlack.svg"
-          alt="Arrow"
-          class="w-[1.406vw]"
-        />
-      </div>
-    </section>
-    <section class="bg-[#051632]  flex flex-col relative overflow-hidden justify-center h-[57.0833333333vw]">
-      <div class="absolute top-0 w-full h-full ">
-        <img src="./assets/images/svgs/projectGoalsBrandIcon.svg" alt="BrandIcon" class="absolute w-[86.9791666667vw] left-[50%] top-[-83%] transition-all duration-500 tranform translate-x-[-50%] rotate-[183deg]">
-      </div>
-       <div class="mt-[3.90625vw] flex items-center flex-col text-center">
-        <span class="tagline text-[#F2A943]">
-          Roadmap
-        </span>
-        <h4 class="heading text-white">
-          Project Goals
-        </h4>
-       </div>
-       <span>
-        1/7
-       </span>
-       <div class="swiper goalCarousel  w-[44.2708333333vw] ">
-         <!-- Additional required wrapper -->
-         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide  text-white" >
-              <p class="text-[1.5625vw] leading-[2.34375vw] text-center">
-                Conserve, restore and enhance a 100-hectare reefscape around Shushah Island before moving to supporting restoration across the region.
-              </p>
-            </div>
-            <div class="swiper-slide  text-white" >
-              <p class="text-[1.5625vw] leading-[2.34375vw] text-center">
-                Conserve, restore and enhance a 100-hectare reefscape around Shushah Island before moving to supporting restoration across the region.
-              </p>
-            </div>
-            <div class="swiper-slide  text-white" >
-              <p class="text-[1.5625vw] leading-[2.34375vw] text-center">
-                Conserve, restore and enhance a 100-hectare reefscape around Shushah Island before moving to supporting restoration across the region.
-              </p>
-            </div>
-            <div class="swiper-slide  text-white" >
-              <p class="text-[1.5625vw] leading-[2.34375vw] text-center">
-                Conserve, restore and enhance a 100-hectare reefscape around Shushah Island before moving to supporting restoration across the region.
-              </p>
-            </div>
-            <div class="swiper-slide  text-white" >
-              <p class="text-[1.5625vw] leading-[2.34375vw] text-center">
-                Conserve, restore and enhance a 100-hectare reefscape around Shushah Island before moving to supporting restoration across the region.
-              </p>
-            </div>
-            <div class="swiper-slide  text-white" >
-              <p class="text-[1.5625vw] leading-[2.34375vw] text-center">
-                Conserve, restore and enhance a 100-hectare reefscape around Shushah Island before moving to supporting restoration across the region.
-              </p>
-            </div>
-            <div class="swiper-slide  text-white" >
-              <p class="text-[1.5625vw] leading-[2.34375vw] text-center">
-                Conserve, restore and enhance a 100-hectare reefscape around Shushah Island before moving to supporting restoration across the region.
-              </p>
-            </div>
-             
-         </div>
-           <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
 
-       </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
        
+      <div data-aos="fade-up" data-aos-duration="800" class="flex items-center gap-x-[1.2vw] cursor-pointer group mt-[3.90625vw]">
+        <span class="para uppercase group-hover:text-[#3E828E]">View All</span>
+        <div class="flex items-center">
+          <svg
+            class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+            viewBox="0 0 5 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.3"
+              class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+              d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+            />
+          </svg>
+
+          <svg
+            class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+            viewBox="0 0 9 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.5"
+              class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+              d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+            />
+          </svg>
+
+          <svg
+            viewBox="0 0 14 28"
+            class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+              d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+            />
+          </svg>
+        </div>
+      </div>
     </section>
-    <section class="py-[6.77083333333vw] bg-[#F2E6D14D] flex flex-col justify-center items-center text-center">
-      <h3 class="heading ">The Partners</h3>
-      <div class="swiper mt-[3.75vw] w-[66.3541666667vw] partnersCarousel ">
+    <section
+      class="py-[6.77083333333vw] bg-[#F2E6D14D] flex flex-col justify-center items-center text-center"
+    >
+      <h3 class="heading" data-aos="fade-up" data-aos-duration="800" >The Partners</h3>
+      <div class="swiper mt-[3.75vw] w-[66.3541666667vw] partnersCarousel">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="flex flex-col">
-              <img src="./assets/images/svgs/partner1.svg" alt="Partner 1" class="w - [6.97916666667vw] w-[5.75vw] mx-auto mb-[2.5vw]">
+              <img
+                src="./assets/images/svgs/partner1.svg"
+                alt="Partner 1"
+                class="w - [6.97916666667vw] w-[5.75vw] mx-auto mb-[2.5vw]"
+              />
               <div class="mb-[4.6875vw] flex justify-between items-start">
-                <img src="./assets/images/svgs/quote.svg" alt="Quote" class="w-[3.75vw]">
-                <p class="para max-w-[49.7916666667vw]">NEOM is a region in northwest Saudi Arabia that is being sustainably developed from the ground up with the world’s most advanced technologies to redefine how people live, work, and play, and is a key project in Saudi Arabia’s Vision 2030. NEOM provides the conceptual and scientific framework and vision, government personnel and logistical support, and the 100-hectare Red Sea site and land-based locations for building coral nurseries.</p> 
-                <img src="./assets/images/svgs/quote.svg" alt="Quote" class="transform rotate-[180deg] w-[3.75vw]"> 
+                <img
+                data-aos="fade" data-aos-duration="800" data-aos-delay="600"  
+                src="./assets/images/svgs/quote.svg"
+                  alt="Quote"
+                  class="w-[3.75vw]"
+                  data-aos="fade" data-aos-duration="800" 
+                />
+                <p class="para max-w-[49.7916666667vw]" data-aos="fade-up" data-aos-duration="800" >
+                  NEOM is a region in northwest Saudi Arabia that is being
+                  sustainably developed from the ground up with the world’s most
+                  advanced technologies to redefine how people live, work, and
+                  play, and is a key project in Saudi Arabia’s Vision 2030. NEOM
+                  provides the conceptual and scientific framework and vision,
+                  government personnel and logistical support, and the
+                  100-hectare Red Sea site and land-based locations for building
+                  coral nurseries.
+                </p>
+                <img
+                data-aos="fade" data-aos-duration="800" data-aos-delay="600"  
+                src="./assets/images/svgs/quote.svg"
+                  alt="Quote"
+                  class="transform rotate-[180deg] w-[3.75vw]"
+                />
               </div>
             </div>
-          </div>  
+          </div>
           <div class="swiper-slide">
             <div class="flex flex-col">
-              <img src="./assets/images/svgs/partner2.svg" alt="Partner 2" class="w - [16.71875vw] w-[20.71875vw] mx-auto mb-[3.5vw]">
+              <img
+                src="./assets/images/svgs/partner2.svg"
+                alt="Partner 2"
+                class="w - [16.71875vw] w-[20.71875vw] mx-auto mb-[3.5vw]"
+              />
               <div class="mb-[4.6875vw] flex justify-between items-start">
-                <img src="./assets/images/svgs/quote.svg" alt="Quote" class="w-[3.75vw]">
-                <p class="para max-w-[49.7916666667vw]">NEOM is a region in northwest Saudi Arabia that is being sustainably developed from the ground up with the world’s most advanced technologies to redefine how people live, work, and play, and is a key project in Saudi Arabia’s Vision 2030. NEOM provides the conceptual and scientific framework and vision, government personnel and logistical support, and the 100-hectare Red Sea site and land-based locations for building coral nurseries.</p> 
-                <img src="./assets/images/svgs/quote.svg" alt="Quote" class="transform rotate-[180deg] w-[3.75vw]"> 
+                <img
+                  src="./assets/images/svgs/quote.svg"
+                  alt="Quote"
+                  class="w-[3.75vw]"
+                />
+                <p class="para max-w-[49.7916666667vw]">
+                  NEOM is a region in northwest Saudi Arabia that is being
+                  sustainably developed from the ground up with the world’s most
+                  advanced technologies to redefine how people live, work, and
+                  play, and is a key project in Saudi Arabia’s Vision 2030. NEOM
+                  provides the conceptual and scientific framework and vision,
+                  government personnel and logistical support, and the
+                  100-hectare Red Sea site and land-based locations for building
+                  coral nurseries.
+                </p>
+                <img
+                  src="./assets/images/svgs/quote.svg"
+                  alt="Quote"
+                  class="transform rotate-[180deg] w-[3.75vw]"
+                />
               </div>
             </div>
-          </div>  
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-      
+
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      
-        
       </div>
-      <div class="flex items-center gap-x-[1.2vw] mt-[3.90625vw]">
-        <span class="para uppercase">View All Partners</span>
-        <img
-          src="./assets/images/svgs/arrowBlack.svg"
-          alt="Arrow"
-          class="w-[1.406vw]"
-        />
+      
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" class="flex items-center mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+        <span class="para uppercase group-hover:text-[#3E828E]">View All Partners</span>
+        <div class="flex items-center">
+          <svg
+            class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+            viewBox="0 0 5 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.3"
+              class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+              d="M1.28278 0L0 0.928488L2.57244 4.00523C3.06192 4.59012 3.06192 5.40988 2.57244 5.99477L0 9.07151L1.28278 10L4.63289 5.99477C5.12237 5.4093 5.12237 4.59012 4.63289 4.00465L1.28278 0Z"
+            />
+          </svg>
+
+          <svg
+            class="min-h-[0.94583333333vw] transition-all duration-500 group-hover:left-[5px] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+            viewBox="0 0 9 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.5"
+              class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+              d="M2.1926 0.919434L0 2.60563L4.39695 8.19321C5.2336 9.2554 5.2336 10.7442 4.39695 11.8063L0 17.3939L2.1926 19.0801L7.91879 11.8063C8.75544 10.7431 8.75544 9.2554 7.91879 8.19215L2.1926 0.919434Z"
+            />
+          </svg>
+
+          <svg
+            viewBox="0 0 14 28"
+            class="min-h-[1.45833333333vw] transition-all group-hover:left-[5px] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="fill-black group-hover:fill-[#3E828E] transition-all duration-500"
+              d="M0.545898 2.60006L7.60945 11.5722C8.73405 12.9997 8.73405 15 7.60945 16.4274L0.545898 25.3996L3.92773 27.9992L13.0383 16.4274C14.1629 15 14.1629 12.9997 13.0383 11.5722L3.92907 0.000488281L0.547238 2.60006H0.545898Z"
+            />
+          </svg>
+        </div>
       </div>
     </section>
 
     <section class="h-[60.9895833333vw] relative">
       <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
-      <span class="absolute bottom-[-2px] left-0 w-full h-[25.9895833333vw] mapOverlay"></span>
-      <span class="absolute top-0 left-0 w-full h-full bg-[#000] opacity-[0.3]"></span>
+      <div
+        draggable="false"
+        style="
+          user-select: none;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+          border-radius: 2px;
+          cursor: pointer;
+          background-color: rgb(255, 255, 255);
+          width: 40px;
+          z-index: 18;
+          height: 81px;
+          position: absolute;
+          bottom: 1.30208333333vw;
+          right: 0.52083333333vw;
+        "
+      >
+        <button
+          draggable="false"
+          aria-label="Zoom in"
+          title="Zoom in"
+          type="button"
+          class="gm-control-active"
+          id="gm-zoom-in"
+          style="
+            background: none;
+            display: block;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            text-transform: none;
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            top: 0px;
+            left: 0px;
+          "
+        >
+          <img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          /><img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          /><img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          /><img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          />
+        </button>
+        <div
+          style="
+            position: relative;
+            overflow: hidden;
+            width: 30px;
+            height: 1px;
+            margin: 0px 5px;
+            background-color: rgb(230, 230, 230);
+            top: 0px;
+          "
+        ></div>
+        <button
+          draggable="false"
+          aria-label="Zoom out"
+          title="Zoom out"
+          type="button"
+          class="gm-control-active"
+          id="gm-zoom-out"
+          style="
+            background: none;
+            display: block;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            text-transform: none;
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            top: 0px;
+            left: 0px;
+          "
+        >
+          <img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          /><img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          /><img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          /><img
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+            alt=""
+            style="height: 18px; width: 18px"
+          />
+        </button>
+      </div>
+      <span
+        class="absolute pointer-events-none top-0 left-0 w-full h-full bg-[#000] opacity-[0.3]"
+      ></span>
+      <span
+        class="absolute pointer-events-none bottom-[-2px] left-0 w-full h-[25.9895833333vw] mapOverlay"
+      ></span>
     </section>
-    <footer class="h-[10.4166666667vw] bg-[#051632] flex items-center ">
+    <span
+      class="rotate-[180deg] rotate-[210deg] rotate-[240deg] rotate-[270deg] rotate-[300deg] rotate-[330deg] rotate-[360deg]"
+    ></span>
+    <footer class="h-[10.4166666667vw] bg-[#051632] flex items-center">
       <div class="myContainer flex justify-between items-center">
         <div class="flex items-center">
-          <img src="./assets/images/logos/footer_logo.svg" alt="Footer Logo" class="w-[8.28125vw] mr-[3.38541666667vw]">
-          <div class="pl-[3.38541666667vw] flex h-[2.60416666667vw] border-l border-white items-center gap-x-[1.25vw]">
-            <img src="./assets/images/svgs/facebook.svg" alt="Facebook" class="w-[1.92708333333vw]">
-            <img src="./assets/images/svgs/twitter.svg" alt="Twitter" class="w-[1.92708333333vw]">
-            <img src="./assets/images/svgs/linkedin.svg" alt="Linkedin" class="w-[1.92708333333vw]">
-            <img src="./assets/images/svgs/instagram.svg" alt="Instagram" class="w-[1.92708333333vw]">
+          <img
+            src="./assets/images/logos/footer_logo.svg"
+            alt="Footer Logo"
+            class="w-[8.28125vw] mr-[3.38541666667vw]"
+          />
+          <div
+            class="pl-[3.38541666667vw] flex h-[2.60416666667vw] border-l border-white items-center gap-x-[1.25vw]"
+          >
+            <img
+              src="./assets/images/svgs/facebook.svg"
+              alt="Facebook"
+              class="w-[1.92708333333vw]"
+            />
+            <img
+              src="./assets/images/svgs/twitter.svg"
+              alt="Twitter"
+              class="w-[1.92708333333vw]"
+            />
+            <img
+              src="./assets/images/svgs/linkedin.svg"
+              alt="Linkedin"
+              class="w-[1.92708333333vw]"
+            />
+            <img
+              src="./assets/images/svgs/instagram.svg"
+              alt="Instagram"
+              class="w-[1.92708333333vw]"
+            />
           </div>
         </div>
         <div>
           <span class="text-white text-[0.72916666666vw]">
-            King Abdullah University of Science and Technology. All rights reserved. © 2022
+            King Abdullah University of Science and Technology. All rights
+            reserved. © 2022
           </span>
         </div>
       </div>
     </footer>
-    <script>
-      
-      const goalCarousel= new Swiper('.goalCarousel', {
-      //  loop: true,
-       slidesPerView: "1", 
-       
-       // If we need pagination
-       pagination: {
-         el: '.swiper-pagination',
-       },
-     
-       // Navigation arrows
-       navigation: {
-         nextEl: '.swiper-button-next',
-         prevEl: '.swiper-button-prev',
-       },
-     
-       
-     });
-      goalCarousel.on('slideChange',()=>{
-        
-      })
-      const majorCarousel= new Swiper('.majorCarousel', {
-      //  loop: true,
-       slidesPerView: "auto", 
-       
-       // If we need pagination
-       pagination: {
-         el: '.swiper-pagination',
-       },
-     
-       // Navigation arrows
-       navigation: {
-         nextEl: '.swiper-button-next',
-         prevEl: '.swiper-button-prev',
-       },
-     
-       
-     });
-         
-    const photoCarousel = new Swiper('.photoCarousel', {
-       
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  
-});
-      const partnersCarousel = new Swiper('.partnersCarousel', {
-  
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  
-});
-    </script>
-  <script>
-    const videoBrandIcons = document.querySelectorAll('.vBI')
-    let activeVBI = 3
-    setInterval(()=>{
-      console.log(activeVBI)
-      activeVBI = activeVBI ===3 ?0 :activeVBI+ 1
-      console.log(activeVBI)
-      videoBrandIcons.forEach((item,index)=>{
-        if(index ==activeVBI){
-          item.classList.remove('opacity-0')
-        }else{
-          item.classList.add('opacity-0')
-        }
-      })
-    },800)
-    
-
-</script>
-
-<script>
-
-
-
-
-      let el1 = document.getElementById("aBI1");
-      let el2 = document.getElementById("aBI2");
-      window.addEventListener("click", () => {
-        // el1.classList.contains("opacity-[0]")
-        //   ? el1.classList.remove("hidden") &&
-        //     el1.classList.remove("opacity-[0]") &&
-        //     el2.classList.add("hidden") &&
-        //     el2.classList.add("opacity-[0]")
-        //   : el1.classList.add("hidden") && el1.classList.add("opacity-[0]");
-        // el2.classList.add("hidden") && el2.classList.add("opacity-[0]");
-        if (el2.classList.contains("opacity-[0]")) {
-          el2.classList.remove("hidden");
-          el2.classList.remove("opacity-[0]");
-          el1.classList.add("hidden");
-          el1.classList.add("opacity-[0]");
-        } else {
-          el2.classList.add("hidden");
-          el2.classList.add("opacity-[0]");
-          el1.classList.remove("hidden");
-          el1.classList.remove("opacity-[0]");
-        }
-      });
-    </script>
-    <script>
-      function myMap() {
-    var mapProp = {  
-        // center: { lat: 28.739279, lng: 35.25263 },
-        center: { lat: 27.934363695177673, lng: 34.904101026832535 },
-        zoom: 10,
-        mapTypeId: 'satellite'
-        // disableDefaultUI: true,
-        // draggable: false, 
-        // zoomControl: false,
-  
-    };
-
- 
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-   
-
-//   const infowindow = new google.maps.InfoWindow({
-//     content: contentString,
-//   });
-
-
-
-    marker = new google.maps.Marker({
-        position: new google.maps.LatLng(27.934363695177673,34.904101026832535) ,
-        map: map,
-             
-    });
-
-}
-    </script>
-     <script
-     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyl0V6q-y690EdIhyuq6fdbvGHoFtGGE&callback=myMap"></script>
+    <script src="./assets/javascript/aos.js"></script>
+    <script src="./assets/javascript/swiper-bundle.min.js"></script>
+    <script src="./assets/javascript/aosInit.js"></script>
+    <script src="./assets/javascript/partnersCarousel.js"></script>
+    <script src="./assets/javascript/goalCarousel.js"></script>
+    <script src="./assets/javascript/majorCarousel.js"></script>
+    <script src="./assets/javascript/photoCarousel.js"></script>
+    <script src="./assets/javascript/videoBrandIcons.js"></script>
+    <script src="./assets/javascript/awarenessSlider.js"></script>
+    <script src="./assets/javascript/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyl0V6q-y690EdIhyuq6fdbvGHoFtGGE&callback=myMap"></script>
   </body>
 </html>
