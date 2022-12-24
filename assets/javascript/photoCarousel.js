@@ -3,6 +3,8 @@ const photoCarousel = new Swiper('.photoCarousel', {
     loop: true,
     centeredSlides: true,
     slidesPerView: "auto",
+    speed: 800,
+    ease:'linear',
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',

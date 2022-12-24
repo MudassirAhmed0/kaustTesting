@@ -713,6 +713,10 @@ video {
   top: 1.04166666667vw;
 }
 
+.bottom-\[7\.8125vw\] {
+  bottom: 7.8125vw;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2385,6 +2389,21 @@ video {
 .py-\[6\.77083333333vw\] {
   padding-top: 6.77083333333vw;
   padding-bottom: 6.77083333333vw;
+}
+
+.py-\[7\.8125vw\] {
+  padding-top: 7.8125vw;
+  padding-bottom: 7.8125vw;
+}
+
+.py-\[6\.8125vw\] {
+  padding-top: 6.8125vw;
+  padding-bottom: 6.8125vw;
+}
+
+.py-\[6\.5125vw\] {
+  padding-top: 6.5125vw;
+  padding-bottom: 6.5125vw;
 }
 
 .pr-\[0\.83vw\] {

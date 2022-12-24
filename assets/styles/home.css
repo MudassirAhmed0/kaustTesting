@@ -118,7 +118,7 @@
    padding-bottom: 3.75vw!important;
 }
 .majorCarousel .swiper-slide{
-   transition: .5s;
+   transition: .8s all!important;
    width: 20.4583333333vw;
    margin-right:2.1875vw;
    height: 29.84375vw;
@@ -174,7 +174,7 @@
 .goalCarousel{
    margin-top: auto!important;
    padding-bottom: 3.75vw!important;
-   margin-bottom: 4.16666666667vw!important;
+   /* margin-bottom: 4.16666666667vw!important; */
 }
 
 

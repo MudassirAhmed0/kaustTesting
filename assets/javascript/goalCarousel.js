@@ -1,6 +1,8 @@
 let goalBi =document.getElementById('goalBI')
 const goalCarousel= new Swiper('.goalCarousel', {
 //  loop: true,
+speed: 800,
+    ease:'linear',
 autoplay: {
     delay: 5000,
     disableOnInteraction: false,
