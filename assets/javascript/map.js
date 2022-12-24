@@ -2,8 +2,8 @@ function myMap() {
     var mapProp = {  
          center: { lat: 27.934363695177673, lng: 34.904101026832535 },
         zoom: 9.5,
-        mapTypeId: 'satellite' 
-  
+        mapTypeId: 'satellite' ,
+        draggable: false
     };
 
  
@@ -20,18 +20,23 @@ google.maps.event.addDomListener(zoomInBtn, 'click', function() {
     google.maps.event.addDomListener(zoomOutBtn, 'click', function() {
         map.setZoom(map.getZoom() - 1);
     });
-//   const infowindow = new google.maps.InfoWindow({
-//     content: contentString,
-//   });
+
+     
 
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(27.934363695177673,34.904101026832535) ,
         map: map,
-             
+        title: "Shushah Island",
     });
-    map.addListener("mouseover", () => {
-        map.setZoom(10);
-    });
+    let firstVisit = true
+    const handleMapHover =() => {
+        if(firstVisit){
+            map.setZoom(10);
+            firstVisit =false
+        }
+
+    }
+    map.addListener("mouseover", handleMapHover);
     // map.addListener("mouseout", () => {
     //     map.setZoom(9.5);
     // });

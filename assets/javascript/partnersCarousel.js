@@ -5,7 +5,8 @@ const partnersCarousel = new Swiper('.partnersCarousel', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-    },
+      clickable: true
+     },
   
     // Navigation arrows
     navigation: {

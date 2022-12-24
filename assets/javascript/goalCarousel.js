@@ -10,7 +10,8 @@ autoplay: {
 
  // If we need pagination
  pagination: {
-   el: '.swiper-pagination',
+  el: '.swiper-pagination',
+  clickable: true
  },
 
  // Navigation arrows
@@ -39,3 +40,18 @@ let splitted =fraction.split(' ')
 let  fractionSpans = document.getElementById('goals-pagination-fraction').querySelectorAll('span')
 fractionSpans[0].innerHTML = splitted[0]
 fractionSpans[1].innerHTML = ` ${splitted[1]}  ${splitted[2]}`
+
+
+// const gc= document.getElementById('goalContainer')
+// let firstVisit = false
+// window.addEventListener('scroll',()=>{
+//     if(window.scrollY > slides[0].offsetTop + gc.offsetTop - (window.innerHeight/1.6)){
+//         if(!firstVisit){
+//             firstVisit = true
+//             slides[0].classList.add('active')
+//             setInterval(()=>{
+//                 handleNext()
+//             },8000)
+//         }
+//     }
+// })
