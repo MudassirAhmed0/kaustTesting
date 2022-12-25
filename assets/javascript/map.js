@@ -3,7 +3,7 @@ function myMap() {
          center: { lat: 27.934363695177673, lng: 34.904101026832535 },
         zoom: 9.5,
         mapTypeId: 'satellite' ,
-        draggable: false
+        draggable: true
     };
 
  
