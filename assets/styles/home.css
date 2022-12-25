@@ -117,23 +117,30 @@
 .majorCarousel{
    margin-right: unset!important;
    padding-bottom: 3.75vw!important;
+   margin-left: auto;
 }
-.majorCarousel .swiper-slide{
+.majorCarouselWrapper{
+   display: flex;
+   overflow: hidden;
+}
+.majorCarouselSlide{
    transition: .8s all!important;
    width: 20.4583333333vw;
+   min-width: 20.4583333333vw;
    margin-right:2.1875vw;
    height: 29.84375vw;
 
 }
-.majorCarousel .swiper-slide-active{
+.majorCarouselSlideActive{
    width: 33.28125vw;
+   min-width: 33.28125vw;
 
 }
-.majorCarousel .swiper-slide-active .majorOverlay{
+.majorCarouselSlideActive .majorOverlay{
    z-index: 5;
 
 }
-.majorCarousel .swiper-slide-active .content{
+.majorCarouselSlideActive .content{
    z-index: 6;
 }
 
@@ -141,18 +148,18 @@
    background: linear-gradient(0deg, rgba(5, 22, 50, 0.5), rgba(5, 22, 50, 0.5));
 }
 
-.majorCarousel .swiper-slide-active .content{
+.majorCarouselSlideActive .content{
    top: 4.89583333333vw;
    padding-left: 3.7vw;
    padding-right: 3.7vw;
 }
-.majorCarousel .swiper-slide-active .content h5{
+.majorCarouselSlideActive .content h5{
    max-width: 700px;
 }
-.majorCarousel .swiper-slide-active .content p{
+.majorCarouselSlideActive .content p{
    opacity: 1;
 }
-.majorCarousel .swiper-slide-active .content img{
+.majorCarouselSlideActive .content img{
    opacity: 1;
 }
 
@@ -304,6 +311,8 @@
 }
 .gm-ui-hover-effect{
    opacity: 0!important;
+   top: 5px!important;
+   right: 5px!important;
 }
 /* #firstHeading{
    font-size: 1.30208333333vw;

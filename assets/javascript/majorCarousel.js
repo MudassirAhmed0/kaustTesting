@@ -40,3 +40,69 @@
 //   //   console.log( splittedTransform.join())
 //   //   wrapper.style.transform = splittedTransform.join()
 //   //  })
+
+const nextBtn = document.querySelector('.majorCarouselNext')
+const prevBtn = document.querySelector('.majorCarouselPrev')
+const majorCarouselSlides = document.querySelectorAll('.majorCarouselSlide')
+const majorPaginationDots = document.querySelectorAll('.majorPagination span')
+let majorCarouselSlideNo = 0
+let translateX = (window.innerWidth % 100) * 21.65625  
+
+
+const changeMajorActivePaginationClass =()=>{
+  majorPaginationDots.forEach((item,index)=>{
+      if(index == majorCarouselSlideNo){
+          item.classList.add('w-[4.270vw]')
+          item.classList.remove('opacity-[0.5]')
+          item.classList.remove('w-[1.354vw]')
+      }else{
+          item.classList.remove('w-[4.270vw]')
+          item.classList.add('w-[1.354vw]')
+          item.classList.add('opacity-[0.5]')
+
+      }
+  })
+}
+
+
+const changeMajorSlide = ()=>{
+  console.log(majorCarouselSlideNo)
+  majorCarouselSlides.forEach((slide,index)=>{
+    if(index == majorCarouselSlideNo){
+      slide.classList.add('majorCarouselSlideActive')
+    }else{
+      slide.classList.remove('majorCarouselSlideActive')
+    }
+    slide.style.transform=`translateX(-${translateX * majorCarouselSlideNo}px)`
+  })
+}
+
+const handleMajorNext =()=>{
+  majorCarouselSlideNo = majorCarouselSlideNo != majorCarouselSlides.length - 1 ? majorCarouselSlideNo + 1: majorCarouselSlideNo
+ changeMajorSlide()
+ changeMajorActivePaginationClass()
+}
+const handlePrevNext =()=>{
+  majorCarouselSlideNo = majorCarouselSlideNo != 0 ? majorCarouselSlideNo - 1: majorCarouselSlideNo
+ changeMajorSlide()
+ changeMajorActivePaginationClass()
+}
+
+const handleMajorSlideChange =(slideNo)=>{
+  majorCarouselSlideNo = slideNo
+  changeMajorSlide() 
+ changeMajorActivePaginationClass()
+
+}
+
+majorPaginationDots.forEach((dot,index)=>{
+  dot.addEventListener('click', ()=> handleMajorSlideChange(index))
+})
+
+majorCarouselSlides.forEach((slide,index)=>{
+  slide.addEventListener('click', ()=> handleMajorSlideChange(index))
+
+})
+
+nextBtn.addEventListener('click',handleMajorNext)
+prevBtn.addEventListener('click',handlePrevNext)
