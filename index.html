@@ -180,7 +180,7 @@
         <div
           class="relative flex flex-col justify-center items-center text-white"
         >
-          <div class="mb-[2.8125vw] relative">
+          <div id="play" class="mb-[2.8125vw] relative cursor-pointer">
             <img
               src="./assets/images/svgs/videoBrandIcon.svg"
               alt="BrandIcon"
@@ -190,7 +190,6 @@
             <img
               src="./assets/images/svgs/pauseIcon.svg"
               alt="Pause"
-              id="play"
               class="w-[1.30208333333vw]  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
             />
           </div>
@@ -766,7 +765,7 @@
     </section>
 
     <section
-      class="bg-[#051632] py-[6.5125vw]  flex flex-col relative overflow-hidden justify-center h-[57.0833333333vw]"
+      class="bg-[#051632] pb-[5.5vw] pt-[6.5125vw]  flex flex-col relative overflow-hidden justify-center h-[57.0833333333vw]"
     >
       <div class="absolute top-0 w-full h-full">
         <img
@@ -955,8 +954,10 @@
     <section
       class="py-[7.8125vw] relative  flex flex-col justify-center items-center text-center"
     >
-    <span class="absolute w-full h-full top-0 left-0 bg-white"></span>
-    <span class="absolute w-full h-full top-0 left-0 bg-[#F2E6D14D]"></span>
+    <span class="absolute w-full h-full top-[-1px] left-0 bg-white"></span>
+    <span class="absolute w-full h-full top-[-1px] left-0 bg-white"></span>
+    <span class="absolute w-full h-[5px] bottom-[-5px] left-0 bg-[#F2E6D14D]"></span>
+    <span class="absolute w-full h-[5px] bottom-[-5px] left-0 bg-[#F2E6D14D]"></span>
       <h3 class="heading" data-aos="fade-up" data-aos-duration="800" >The Partners</h3>
       <div class="swiper mt-[3.75vw] w-[66.3541666667vw] partnersCarousel">
         <!-- Additional required wrapper -->
@@ -1067,7 +1068,7 @@
       </div>
     </section>
 
-    <section class="h-[60.9895833333vw] relative">
+    <section class="h-[60.9895833333vw] relative top-[-1px]">
       <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
       <div
         draggable="false"
@@ -1183,15 +1184,13 @@
           />
         </button>
       </div>
-      <span
+      <!-- <span
         class="absolute pointer-events-none top-0 left-0 w-full h-full bg-[#000] opacity-[0.3]"
-      ></span>
+      ></span> -->
       <span
         class="absolute pointer-events-none bottom-[-2px] left-0 w-full h-[25.9895833333vw] mapOverlay"
       ></span>
-      <h4 class="font-[700] text-[2.91vw] leading-[3.95vw] text-white absolute top-[23vw] left-[37vw]">
-        Shushah Island
-      </h4>
+       
     </section>
     <span
       class="rotate-[180deg] rotate-[210deg] rotate-[240deg] rotate-[270deg] rotate-[300deg] rotate-[330deg] rotate-[360deg]"

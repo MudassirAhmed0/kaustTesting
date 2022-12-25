@@ -21,12 +21,33 @@ google.maps.event.addDomListener(zoomInBtn, 'click', function() {
         map.setZoom(map.getZoom() - 1);
     });
 
-     
+    const contentString =
+    `<div id="content" class='font-[nunito]'> 
+      <img id='closeWindow' src='./assets/images/svgs/close.svg'/>
 
+    <div id="siteNotice"> 
+    </div>
+    <h5 id="firstHeading" class="firstHeading ">Shushah Island</h5> 
+    <div id="bodyContent"> 
+    <div >
+    <img class='w-full' src='./assets/images/map/ats-window.jpg'/>
+    </div>
+    <button>View on the map</button>
+    </div>
+    </div>`;
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "Shushah Island",
+  });
+  let image = {
+    url:'./assets/images/map/pin.png',
+    scaledSize: new google.maps.Size(50, 50)
+  }
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(27.934363695177673,34.904101026832535) ,
         map: map,
         title: "Shushah Island",
+        icon: image,
     });
     let firstVisit = true
     const handleMapHover =() => {
@@ -40,6 +61,17 @@ google.maps.event.addDomListener(zoomInBtn, 'click', function() {
     // map.addListener("mouseout", () => {
     //     map.setZoom(9.5);
     // });
+
+    marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map,
+    });
+  });
+  infowindow.open({
+    anchor: marker,
+    map,
+  });
 }
    
 
