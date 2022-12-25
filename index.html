@@ -37,7 +37,7 @@
         autoplay
         muted
         loop
-        class="w-full h-full absolute top-0 left-0 object-cover"
+        class="w-full h-full  top-0 left-0 object-cover fixed"
       ></video>
       <span class="absolute w-full h-full top-0 left-0 heroOverlay"></span>
       <div class="myContainer relative text-white pt-[16.29vh]">
@@ -168,7 +168,10 @@
 
       </div>
     </section>
-    <section class="h-[22.5vw] bg-white">
+    <section class="h-[22.5vw] relative">
+      <span class="absolute top-[-1px] left-0 w-full h-full bg-white ">
+
+      </span>
       <div
         class="w-[86.71vw] mx-auto h-[44.94vw] relative flex justify-center items-center z-[5] rounded-[1.04166666667vw] overflow-hidden"
       >
@@ -181,28 +184,14 @@
             <img
               src="./assets/images/svgs/videoBrandIcon.svg"
               alt="BrandIcon"
-              class="w-[8.96875vw] vBI vBI1"
+              class="w-[8.96875vw] vBI vBI1 fadeInKarBhai"
             />
-            <img
-              src="./assets/images/svgs/videoBrandIcon2.svg"
-              alt="BrandIcon"
-              class="w-[8.96875vw] vBI vBI2 absolute top-0 opacity-0"
-            />
-            <img
-              src="./assets/images/svgs/videoBrandIcon3.svg"
-              alt="BrandIcon"
-              class="w-[8.96875vw] vBI vBI3 absolute top-0 opacity-0"
-            />
-            <img
-              src="./assets/images/svgs/videoBrandIcon4.svg"
-              alt="BrandIcon"
-              class="w-[8.96875vw] vBI vBI4 absolute top-0 opacity-0"
-            />
+             
             <img
               src="./assets/images/svgs/pauseIcon.svg"
               alt="Pause"
               id="play"
-              class="w-[1.30208333333vw] absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
+              class="w-[1.30208333333vw]  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
             />
           </div>
           <h4 class="heading mb-[0.52083333333vw]" data-aos="fade-up" data-aos-duration="800">100 Hectares</h4>
@@ -240,7 +229,7 @@
         />
       </div>
       <div
-        class="absolute w-full bottom-[14.3229vw] left-0 awarenessSlide "
+        class="absolute w-full bottom-[15.3229vw] left-0 awarenessSlider "
       >
         <div class="myContainer text-white">
           <span
@@ -253,14 +242,17 @@
           >
             Guiding Principles
           </h3>
-          <p
-            class="text-[1.30208333333vw] relative leading-[1.97916666667vw] delay-[500ms] mb-[3.75vw] transition-all duration-[800ms] opacity-0 top-[-40px] mt-[1.770vw] text-white w-[41.66vw]"
+          <div class="h-[10.4166666667vw]   ">
+          </div>
+          <div class="h-[10.4166666667vw] absolute top-[5.88541666667vw] awarenessSlide active">
+            <p
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw]  mb-[3.75vw] transition-all duration-[800ms] opacity-0  mt-[1.770vw] text-white w-[41.66vw]"
           >
             Support NEOM and Saudi Arabia’s goals to study and protect Red Sea
             marine environments
           </p>
           
-          <div class="flex items-center transition-all duration-[800ms]  delay-[800ms] awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+          <div class="flex items-center transition-all duration-[800ms]    awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
             <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
             <div class="flex items-center">
              
@@ -285,9 +277,115 @@
                 </svg>
             </div>
           </div>
+
+          </div>
+          <div class="h-[10.4166666667vw] absolute top-[5.88541666667vw] awarenessSlide hidden ">
+            <p
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw]  mb-[3.75vw] mt-[1.770vw] text-white w-[43.8020833333vw] transition-all duration-[800ms] opacity-0 "
+          >
+            Be a global showcase of coral reef restoration, demonstrating
+            innovative approaches and technologies designed to accelerate coral
+            reef conservation, restoration and enhancement solutions in a
+            changing climate, and that can be applied to other reef ecosystems
+            around the world
+          </p>
+           <div class="flex items-center transition-all duration-[800ms]    awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+             
+              <svg class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+              viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                opacity="0.3" d="M1.28278 0.177246L0 1.10573L2.57244 4.18248C3.06192 4.76736 3.06192 5.58713 2.57244 6.17201L0 9.24876L1.28278 10.1772L4.63289 6.17201C5.12237 5.58655 5.12237 4.76736 4.63289 4.1819L1.28278 0.177246Z" />
+                </svg>
+                
+
+              <svg class="min-h-[0.94583333333vw] transition-all duration-500 transform group-hover:translate-x-[0.26041666666vw] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+              viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                opacity="0.5" d="M2.1926 0.0969238L0 1.78312L4.39695 7.3707C5.2336 8.43289 5.2336 9.92164 4.39695 10.9838L0 16.5714L2.1926 18.2576L7.91879 10.9838C8.75544 9.92058 8.75544 8.43289 7.91879 7.36964L2.1926 0.0969238Z" />
+                </svg>
+                
+              <svg class="min-h-[1.45833333333vw] transition-all transform group-hover:translate-x-[0.26041666666vw] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+              viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                class="fill-white stroke-[#051632]  group-hover:fill-[#3E828E] transition-all duration-500"
+                d="M1.25165 25.4889L8.0022 16.9143C8.00224 16.9143 8.00227 16.9142 8.00231 16.9142C9.26979 15.3053 9.26976 13.0492 8.0022 11.4403L1.25216 2.86634L3.84192 0.875621L12.6454 12.059L12.6456 12.0592C13.6272 13.3051 13.6272 15.0495 12.6456 16.2955L12.6455 16.2956L3.8406 27.479L1.25165 25.4889Z"  />
+                </svg>
+            </div>
+          </div>
+          </div>
+            
+          <div class="h-[10.4166666667vw] absolute top-[5.88541666667vw] awarenessSlide hidden">
+            <p
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw]  mb-[3.75vw] mt-[1.770vw] text-white w-[41.66vw] transition-all duration-[800ms] opacity-0 "
+          >
+            Support the exploration, discovery and regeneration of coral
+            reefscapes and surrounding ecosystems in the Red Sea
+          </p>
+           <div class="flex items-center transition-all duration-[800ms]    awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+             
+              <svg class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+              viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                opacity="0.3" d="M1.28278 0.177246L0 1.10573L2.57244 4.18248C3.06192 4.76736 3.06192 5.58713 2.57244 6.17201L0 9.24876L1.28278 10.1772L4.63289 6.17201C5.12237 5.58655 5.12237 4.76736 4.63289 4.1819L1.28278 0.177246Z" />
+                </svg>
+                
+
+              <svg class="min-h-[0.94583333333vw] transition-all duration-500 transform group-hover:translate-x-[0.26041666666vw] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+              viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                opacity="0.5" d="M2.1926 0.0969238L0 1.78312L4.39695 7.3707C5.2336 8.43289 5.2336 9.92164 4.39695 10.9838L0 16.5714L2.1926 18.2576L7.91879 10.9838C8.75544 9.92058 8.75544 8.43289 7.91879 7.36964L2.1926 0.0969238Z" />
+                </svg>
+                
+              <svg class="min-h-[1.45833333333vw] transition-all transform group-hover:translate-x-[0.26041666666vw] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+              viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                class="fill-white stroke-[#051632]  group-hover:fill-[#3E828E] transition-all duration-500"
+                d="M1.25165 25.4889L8.0022 16.9143C8.00224 16.9143 8.00227 16.9142 8.00231 16.9142C9.26979 15.3053 9.26976 13.0492 8.0022 11.4403L1.25216 2.86634L3.84192 0.875621L12.6454 12.059L12.6456 12.0592C13.6272 13.3051 13.6272 15.0495 12.6456 16.2955L12.6455 16.2956L3.8406 27.479L1.25165 25.4889Z"  />
+                </svg>
+            </div>
+          </div>
+          </div>
+          <div class="h-[10.4166666667vw] absolute top-[5.88541666667vw] awarenessSlide hidden">
+            <p
+            class="text-[1.30208333333vw] relative leading-[1.97916666667vw]  mb-[3.75vw] mt-[1.770vw] text-white w-[41.66vw] transition-all duration-[800ms] opacity-0 "
+          >
+            Provide educational, digital interactive experiences about the
+            Kingdom’s coral reefscapes to scientists, students, tourists and
+            guests through both hands-on and immersive virtual experiences
+          </p>
+           <div class="flex items-center transition-all duration-[800ms]    awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
+            <div class="flex items-center">
+             
+              <svg class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
+              viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                opacity="0.3" d="M1.28278 0.177246L0 1.10573L2.57244 4.18248C3.06192 4.76736 3.06192 5.58713 2.57244 6.17201L0 9.24876L1.28278 10.1772L4.63289 6.17201C5.12237 5.58655 5.12237 4.76736 4.63289 4.1819L1.28278 0.177246Z" />
+                </svg>
+                
+
+              <svg class="min-h-[0.94583333333vw] transition-all duration-500 transform group-hover:translate-x-[0.26041666666vw] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
+              viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
+                opacity="0.5" d="M2.1926 0.0969238L0 1.78312L4.39695 7.3707C5.2336 8.43289 5.2336 9.92164 4.39695 10.9838L0 16.5714L2.1926 18.2576L7.91879 10.9838C8.75544 9.92058 8.75544 8.43289 7.91879 7.36964L2.1926 0.0969238Z" />
+                </svg>
+                
+              <svg class="min-h-[1.45833333333vw] transition-all transform group-hover:translate-x-[0.26041666666vw] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
+              viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                class="fill-white stroke-[#051632]  group-hover:fill-[#3E828E] transition-all duration-500"
+                d="M1.25165 25.4889L8.0022 16.9143C8.00224 16.9143 8.00227 16.9142 8.00231 16.9142C9.26979 15.3053 9.26976 13.0492 8.0022 11.4403L1.25216 2.86634L3.84192 0.875621L12.6454 12.059L12.6456 12.0592C13.6272 13.3051 13.6272 15.0495 12.6456 16.2955L12.6455 16.2956L3.8406 27.479L1.25165 25.4889Z"  />
+                </svg>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
-      <div
+      <!-- <div
         class="absolute w-full bottom-[12.3958333333vw] left-0 awarenessSlide"
       >
         <div class="myContainer text-white">
@@ -301,43 +399,10 @@
           >
             Guiding Principles
           </h3>
-          <p
-            class="text-[1.30208333333vw] relative leading-[1.97916666667vw] delay-[500ms] mb-[3.75vw] mt-[1.770vw] text-white w-[43.8020833333vw] transition-all duration-[800ms] opacity-0 top-[-40px]"
-          >
-            Be a global showcase of coral reef restoration, demonstrating
-            innovative approaches and technologies designed to accelerate coral
-            reef conservation, restoration and enhancement solutions in a
-            changing climate, and that can be applied to other reef ecosystems
-            around the world
-          </p>
-           <div class="flex items-center transition-all duration-[800ms]  delay-[800ms] awarnenessReadMore opacity-0 mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
-            <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
-            <div class="flex items-center">
-             
-              <svg class="min-h-[0.52083333333vw] min-w-[0.26041666666vw] h-[0.52083333333vw] w-[0.26041666666vw]"
-              viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
-                opacity="0.3" d="M1.28278 0.177246L0 1.10573L2.57244 4.18248C3.06192 4.76736 3.06192 5.58713 2.57244 6.17201L0 9.24876L1.28278 10.1772L4.63289 6.17201C5.12237 5.58655 5.12237 4.76736 4.63289 4.1819L1.28278 0.177246Z" />
-                </svg>
-                
-
-              <svg class="min-h-[0.94583333333vw] transition-all duration-500 transform group-hover:translate-x-[0.26041666666vw] relative min-w-[0.4453125vw] h-[0.94583333333vw] w-[0.4453125vw]"
-              viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="fill-white group-hover:fill-[#3E828E] transition-all duration-500"
-                opacity="0.5" d="M2.1926 0.0969238L0 1.78312L4.39695 7.3707C5.2336 8.43289 5.2336 9.92164 4.39695 10.9838L0 16.5714L2.1926 18.2576L7.91879 10.9838C8.75544 9.92058 8.75544 8.43289 7.91879 7.36964L2.1926 0.0969238Z" />
-                </svg>
-                
-              <svg class="min-h-[1.45833333333vw] transition-all transform group-hover:translate-x-[0.26041666666vw] relative duration-500 min-w-[0.69479166666vw] h-[1.45833333333vw] w-[0.69479166666vw]"
-              viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                class="fill-white stroke-[#051632]  group-hover:fill-[#3E828E] transition-all duration-500"
-                d="M1.25165 25.4889L8.0022 16.9143C8.00224 16.9143 8.00227 16.9142 8.00231 16.9142C9.26979 15.3053 9.26976 13.0492 8.0022 11.4403L1.25216 2.86634L3.84192 0.875621L12.6454 12.059L12.6456 12.0592C13.6272 13.3051 13.6272 15.0495 12.6456 16.2955L12.6455 16.2956L3.8406 27.479L1.25165 25.4889Z"  />
-                </svg>
-            </div>
-          </div>
+         
         </div>
-      </div>
-      <div class="absolute w-full bottom-[14.3229vw] left-0 awarenessSlide">
+      </div> -->
+      <!-- <div class="absolute w-full bottom-[14.3229vw] left-0 awarenessSlide">
         <div class="myContainer text-white">
           <span
             class="tagline transition-all duration-[800ms] opacity-0  relative"
@@ -429,7 +494,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="absolute w-full bottom-[7.8125vw]">
         <div class="flex gap-x-[3.333vw] items-center myContainer">
           <img
@@ -439,16 +504,16 @@
           />
           <div class="flex gap-x-[0.93vw] awarenessPagination">
             <span
-              class="bg-white h-[2px] w-[4.270vw] transition-all duration-500"
+              class="bg-white h-[2px] w-[4.270vw] transition-all duration-[800ms] cursor-pointer"
             ></span>
             <span
-              class="bg-white h-[2px] w-[1.354vw] transition-all duration-500 opacity-[0.5]"
+              class="bg-white h-[2px] w-[1.354vw] transition-all duration-[800ms] cursor-pointer opacity-[0.5]"
             ></span>
             <span
-              class="bg-white h-[2px] w-[1.354vw] transition-all duration-500 opacity-[0.5]"
+              class="bg-white h-[2px] w-[1.354vw] transition-all duration-[800ms] cursor-pointer opacity-[0.5]"
             ></span>
             <span
-              class="bg-white h-[2px] w-[1.354vw] transition-all duration-500 opacity-[0.5]"
+              class="bg-white h-[2px] w-[1.354vw] transition-all duration-[800ms] cursor-pointer opacity-[0.5]"
             ></span>
           </div>
           <img
@@ -798,8 +863,11 @@
       </div>
     </section>
     <section
-      class="py-[7.8125vw]  flex flex-col justify-center items-center text-center"
+      class="py-[7.8125vw]  flex flex-col justify-center items-center text-center relative"
     >
+    <span class="absolute top-0 left-0 w-full h-full bg-white">
+
+    </span>
       <h3 class="heading" data-aos="fade-up" data-aos-duration="800">Photo Gallery</h3>
       <p
       data-aos="fade-down" data-aos-duration="800"
@@ -812,43 +880,43 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div  data-aos="fade" data-aos-duration="800" class="swiper-slide">
+          <a data-fslightbox href="./assets/images/photo-gallery/1.png" data-aos="fade" data-aos-duration="800" class="swiper-slide">
             <img
               src="./assets/images/photo-gallery/1.png"
               alt="Photo Gallery"
             />
-          </div>
+          </a>
          
-          <div data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="swiper-slide">
+          <a data-fslightbox href="./assets/images/photo-gallery/3.png" data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="swiper-slide">
             <img
               src="./assets/images/photo-gallery/3.png"
               alt="Photo Gallery"
             />
-          </div>
-          <div class="swiper-slide">
+          </a>
+          <a data-fslightbox href="./assets/images/photo-gallery/4.png"class="swiper-slide">
             <img
               src="./assets/images/photo-gallery/4.png"
               alt="Photo Gallery"
             />
-          </div>
-          <div class="swiper-slide">
+          </a>
+          <a data-fslightbox href="./assets/images/photo-gallery/5.png" class="swiper-slide">
             <img
               src="./assets/images/photo-gallery/5.png"
               alt="Photo Gallery"
             />
-          </div>
-          <!-- <div class="swiper-slide">
+          </a>
+          <!-- <a data-fslightbox href="./assets/images/photo-gallery/6.png"class="swiper-slide">
             <img
               src="./assets/images/photo-gallery/6.png"
               alt="Photo Gallery"
             />
-          </div> -->
-          <div  data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="swiper-slide">
+          </a> -->
+          <a data-fslightbox href="./assets/images/photo-gallery/2.png"  data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="swiper-slide">
             <img
               src="./assets/images/photo-gallery/2.png"
               alt="Photo Gallery"
             />
-          </div>
+          </a>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -885,8 +953,10 @@
       </div>
     </section>
     <section
-      class="py-[7.8125vw]  bg-[#F2E6D14D] flex flex-col justify-center items-center text-center"
+      class="py-[7.8125vw] relative  flex flex-col justify-center items-center text-center"
     >
+    <span class="absolute w-full h-full top-0 left-0 bg-white"></span>
+    <span class="absolute w-full h-full top-0 left-0 bg-[#F2E6D14D]"></span>
       <h3 class="heading" data-aos="fade-up" data-aos-duration="800" >The Partners</h3>
       <div class="swiper mt-[3.75vw] w-[66.3541666667vw] partnersCarousel">
         <!-- Additional required wrapper -->
@@ -1127,8 +1197,11 @@
       class="rotate-[180deg] rotate-[210deg] rotate-[240deg] rotate-[270deg] rotate-[300deg] rotate-[330deg] rotate-[360deg]"
     ></span>
    
-    <footer class="h-[10.4166666667vw] bg-[#051632] flex items-center">
-      <div class="myContainer flex justify-between items-center">
+    <footer class="h-[10.4166666667vw]  flex items-center relative">
+      <span class="absolute top-0 left-0 w-full h-full bg-[#051632]">
+
+      </span>
+      <div class="myContainer flex justify-between items-center relative">
         <div class="flex items-center">
           <img
             src="./assets/images/logos/footer_logo.svg"
@@ -1179,6 +1252,7 @@
     <!-- <script src="./assets/javascript/videoBrandIcons.js"></script> -->
     <script src="./assets/javascript/videoPopup.js"></script>
     <script src="./assets/javascript/awarenessSlider.js"></script>
+    <script src="./assets/javascript/fslightbox.js"></script>
     <script src="./assets/javascript/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyl0V6q-y690EdIhyuq6fdbvGHoFtGGE&callback=myMap"></script>
   </body>

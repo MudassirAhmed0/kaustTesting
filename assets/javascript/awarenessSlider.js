@@ -1,6 +1,7 @@
 const prevArrow = document.querySelector('.awarenessPrevArrow')
 const nextArrow = document.querySelector('.awarenessNextArrow')
 const slides = document.querySelectorAll('.awarenessSlide')
+const slider = document.querySelector('.awarenessSlider')
 const awarenessBrandIcons = document.querySelectorAll('.awarenessBrandIcon')
 let paginationDots =document.querySelectorAll('.awarenessPagination span')
 let slideNumber = 0
@@ -65,30 +66,40 @@ const changeSlide =(slideNo)=>{
 const handlePrevious =()=>{
     slideNumber = slideNumber == 0 ? slides.length - 1 : slideNumber - 1
     changeSlide(slideNumber)
+    clearInterval(myTimer)
+    myTimer = setInterval(handleNext,8000)
 }
 
 const handleNext =()=>{
     slideNumber = slideNumber == slides.length - 1 ? 0 : slideNumber + 1
     changeSlide(slideNumber)
+    clearInterval(myTimer)
+    myTimer = setInterval(handleNext,8000)
+
 }
 
+const handleDot =(slideNo)=>{
+    slideNumber = slideNo
+    changeSlide(slideNo)
+    clearInterval(myTimer)
+    myTimer = setInterval(handleNext,8000)
+}
 
-
-
+paginationDots.forEach((dot,index)=>{
+    dot.addEventListener('click', ()=> handleDot(index))
+})
 prevArrow.addEventListener('click',handlePrevious)
 nextArrow.addEventListener('click',handleNext)
 
-
+let myTimer 
 const ac= document.getElementById('awarenessContainer')
 let firstVisit = false
 window.addEventListener('scroll',()=>{
     if(window.scrollY > slides[0].offsetTop + ac.offsetTop - (window.innerHeight/1.6)){
         if(!firstVisit){
             firstVisit = true
-            slides[0].classList.add('active')
-            setInterval(()=>{
-                handleNext()
-            },8000)
+            slider.classList.add('active')
+            myTimer = setInterval(handleNext,8000)
         }
     }
 })

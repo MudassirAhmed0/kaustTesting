@@ -19,6 +19,7 @@
     background-color: #000!important;
     margin-right: 0!important;
     margin-left: 0.93vw!important;
+    transition: .8s all!important;
  }
  .goalCarousel .swiper-pagination-bullet{
    background-color: #fff!important;
@@ -186,26 +187,34 @@
 }
 
 
-.awarenessSlide.active .tagline{
+.awarenessSlider.active .tagline{
    top:0;
    opacity: 1;
 }
-.awarenessSlide{
+.awarenessSlider{
    pointer-events: none;
 }
-.awarenessSlide.active{
+.awarenessSlider.active{
    pointer-events: initial;
 }
-.awarenessSlide.active .heading{
+.awarenessSlider.active .heading{
    top:0;
    opacity: 1;
 }
+/* .awarenessSlider.active p{
+   top:0;
+   opacity: 1;
+}
+.awarenessSlider.active .awarnenessReadMore{
+   opacity: 1;
+} */
 .awarenessSlide.active p{
    top:0;
-   opacity: 1;
+
+   opacity:1
 }
 .awarenessSlide.active .awarnenessReadMore{
-   opacity: 1;
+   opacity:1
 }
 .awarenessBrandIcon1.active{
    transform: rotate(0deg);
@@ -231,4 +240,24 @@
 #videoPopup.active{
    opacity: 1;
    pointer-events: initial;
+}
+.fslightbox-slide-number-container{
+   opacity: 0!important;
+}
+
+.fadeInKarBhai{
+   animation: fadeInKarBhai 2s infinite ;
+}
+@keyframes fadeInKarBhai {
+   0%{
+      opacity: 0.5;
+
+   }
+   50%{
+      opacity: 1;
+   }
+   100%{
+      opacity:0.5;
+   }
+
 }
