@@ -7,7 +7,7 @@
     background: linear-gradient(0deg, rgba(5, 22, 50, 0.7), rgba(5, 22, 50, 0.7))
  }
  .swiper-pagination-bullets{
-   bottom: 0.52083333333vw!important;
+   bottom: 0.2083333333vw!important;
    display: flex;
    justify-content: center;
  }
@@ -16,13 +16,17 @@
     opacity: 0.5!important;
     border-radius: 0!important;
     height: 2px!important;
-    background-color: #000!important;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background: linear-gradient(180deg, transparent 0%, transparent 39% ,black 40%, black 60%, transparent 61%, transparent 100%)!important;
+
     margin-right: 0!important;
     margin-left: 0.93vw!important;
     transition: .8s all!important;
  }
- .goalCarousel .swiper-pagination-bullet{
-   background-color: #fff!important;
+ .goalCarousel .swiper-pagination-bullet{  
+   background: linear-gradient(180deg, transparent 0%, transparent 39% ,white 40%, white 60%, transparent 61%, transparent 100%)!important;
+
  }
  .swiper-pagination-bullet-active {
     width: 4.270vw!important;
@@ -246,6 +250,19 @@
 }
 .awarenessBrandIcon4.active{
    transform: rotate(45deg);
+}
+
+
+ .awarenessPagination span{
+   padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background: linear-gradient(180deg, transparent 0%, transparent 39% ,white 40%, white 60%, transparent 61%, transparent 100%);
+}
+.majorPagination span{
+   padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background: linear-gradient(180deg, transparent 0%, transparent 39% ,black 40%, black 60%, transparent 61%, transparent 100%);
+
 }
 
 .gmnoprint, .gm-fullscreen-control{
