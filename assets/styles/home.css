@@ -268,7 +268,7 @@
 .gm-style-iw.gm-style-iw-c{
    background-color: rgba(5, 22, 50,0.8)!important;
    padding:1.108333333vw!important;
-   max-width: 22vw!important;
+   max-width: 18vw!important;
    max-height: 30vw!important;
 }
 .gm-style-iw-d{
@@ -284,13 +284,13 @@
     margin-bottom: 10px;
 }
 .gm-style-iw-d button{
-   font-size: 1.3vw;
+   font-size: 1vw;
     font-family: 'nunito';
     color: white; 
     width: 100%;
     margin-top: 10px;
      border-radius: 0.6vw;
-   padding: 0.5vw;
+   padding: 0.3vw;
     background-color: rgb(242, 169, 67);
 }
 .gm-style-iw-d img{
@@ -303,7 +303,7 @@
     width: 3vw;
 }
 .gm-ui-hover-effect{
-   opacity: 0;
+   opacity: 0!important;
 }
 /* #firstHeading{
    font-size: 1.30208333333vw;
