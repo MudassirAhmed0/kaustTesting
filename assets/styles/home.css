@@ -129,11 +129,13 @@
    min-width: 20.4583333333vw;
    margin-right:2.1875vw;
    height: 29.84375vw;
+   cursor: pointer;
 
 }
 .majorCarouselSlideActive{
    width: 33.28125vw;
    min-width: 33.28125vw;
+   cursor: initial;
 
 }
 .majorCarouselSlideActive .majorOverlay{
@@ -307,7 +309,7 @@
    position: absolute;
     top: 0;
     right: 0;
-    width: 3vw;
+    width: 2vw;
 }
 .gm-ui-hover-effect{
    opacity: 0!important;
