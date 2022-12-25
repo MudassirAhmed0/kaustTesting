@@ -46,8 +46,8 @@ const prevBtn = document.querySelector('.majorCarouselPrev')
 const majorCarouselSlides = document.querySelectorAll('.majorCarouselSlide')
 const majorPaginationDots = document.querySelectorAll('.majorPagination span')
 let majorCarouselSlideNo = 0
-let translateX = (window.innerWidth % 100) * 21.65625  
-
+let translateX = (window.innerWidth / 100) * 22.65625  
+console.log(translateX)
 
 const changeMajorActivePaginationClass =()=>{
   majorPaginationDots.forEach((item,index)=>{
