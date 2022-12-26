@@ -44,12 +44,12 @@ body{
 
  
     .heading {
-      @apply font-[700] text-[2.91vw] leading-[3.95vw] uppercase
+      @apply font-[700] text-[22px] leading-[30px] lg:text-[2.91vw] lg:leading-[3.95vw] uppercase
     }
  
     .para{
-    @apply text-[1.145vw] leading-[1.71vw]
+    @apply text-[14px] leading-[20px] lg:text-[1.145vw] lg:leading-[1.71vw]
 }
     .tagline{
-    @apply text-[1.458vw] leading-[1.9791vw] text-[#F2A943]
+    @apply text-[14px] leading-[20px] lg:text-[1.458vw] lg:leading-[1.9791vw] text-[#F2A943]
 }
