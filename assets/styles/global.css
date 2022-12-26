@@ -51,5 +51,5 @@ body{
     @apply text-[14px] leading-[20px] lg:text-[1.145vw] lg:leading-[1.71vw]
 }
     .tagline{
-    @apply text-[14px] leading-[20px] lg:text-[1.458vw] lg:leading-[1.9791vw] text-[#F2A943]
+    @apply text-[16px] leading-[22px] lg:text-[1.458vw] lg:leading-[1.9791vw] text-[#F2A943]
 }
