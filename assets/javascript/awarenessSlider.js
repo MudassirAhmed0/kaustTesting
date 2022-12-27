@@ -10,18 +10,21 @@ let slideNumber = 0
 
 
 const changeActivePaginationClass =(slideNo)=>{
-    paginationDots.forEach((item,index)=>{
-        if(index == slideNo){
-            item.classList.add('w-[4.270vw]')
-            item.classList.remove('opacity-[0.5]')
-            item.classList.remove('w-[1.354vw]')
-        }else{
-            item.classList.remove('w-[4.270vw]')
-            item.classList.add('w-[1.354vw]')
-            item.classList.add('opacity-[0.5]')
+     
+    let activeClass = window.innerWidth >= 1080?'lg:w-[4.270vw]': 'w-[45px]'
+  let nonActiveClass = window.innerWidth >= 1080?'lg:w-[1.354vw]': 'w-[20px]'
+  paginationDots.forEach((item,index)=>{
+      if(index == slideNo){
+          item.classList.add(activeClass)
+          item.classList.remove('opacity-[0.5]')
+          item.classList.remove(nonActiveClass)
+      }else{
+          item.classList.remove(activeClass)
+          item.classList.add(nonActiveClass)
+          item.classList.add('opacity-[0.5]')
 
-        }
-    })
+      }
+  })
 }
 
 
@@ -67,14 +70,14 @@ const handlePrevious =()=>{
     slideNumber = slideNumber == 0 ? slides.length - 1 : slideNumber - 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,8000)
+    myTimer = setInterval(handleNext,80000000)
 }
 
 const handleNext =()=>{
     slideNumber = slideNumber == slides.length - 1 ? 0 : slideNumber + 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,8000)
+    myTimer = setInterval(handleNext,80000000)
 
 }
 
@@ -82,7 +85,7 @@ const handleDot =(slideNo)=>{
     slideNumber = slideNo
     changeSlide(slideNo)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,8000)
+    myTimer = setInterval(handleNext,80000000)
 }
 
 paginationDots.forEach((dot,index)=>{
@@ -99,7 +102,7 @@ window.addEventListener('scroll',()=>{
         if(!firstVisit){
             firstVisit = true
             slider.classList.add('active')
-            myTimer = setInterval(handleNext,8000)
+            myTimer = setInterval(handleNext,80000000)
         }
     }
 })

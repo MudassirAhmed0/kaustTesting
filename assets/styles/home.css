@@ -162,6 +162,7 @@
 .majorCarouselSlideActive .content h5{
    max-width: 700px;
    animation: majorFade .8s linear;
+   white-space: initial!important;
 }
 @keyframes majorFade {
    0%{opacity: 0;}
@@ -354,3 +355,91 @@
 #bodyContent div img{
    width:100%
 } */
+
+
+@media(max-width:1080px){
+   .majorCarousel{
+      padding-bottom: 30px!important;
+   }
+   .majorCarouselSlide{
+      width: 40vw;
+      min-width: 40vw;
+      margin-right:12px;
+      height: 380px;
+   
+   }
+   .majorCarouselSlideActive{
+      width: 70vw;
+      min-width: 75vw;
+   }
+   .majorCarouselSlide h5{
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 15px;
+   }
+   .majorCarouselSlide .content{
+      top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+   .swiper-button-prev, .swiper-button-next{
+      width:15px!important;
+      height:15px!important;
+      background-size: contain!important;
+   }
+    .majorPagination span {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      background: linear-gradient(180deg, transparent 0%, transparent 44% ,black 45%, black 60%, transparent 61%, transparent 100%); 
+   }
+   .awarenessPagination span{
+      padding-top: 6px;
+      padding-bottom: 6px;
+      background: linear-gradient(180deg, transparent 0%, transparent 44% ,white 45%, white 60%, transparent 61%, transparent 100%); 
+   
+   }
+   .majorCarousel .swiper-button-next {
+      right: 37.2vw!important;
+  }
+  .awarenessBrandIcon2.active{
+   transform: rotate(-15deg);
+}
+.awarenessBrandIcon3.active{
+   transform: rotate(-30deg);
+}
+.awarenessBrandIcon4.active{
+   transform: rotate(-45deg);
+}
+
+.goalCarousel{
+   padding-bottom: 55px!important;
+}
+.goalCarousel .swiper-button-prev,.goalCarousel .swiper-button-next{
+   width:15px!important;
+   height:15px!important;
+   background-size: contain!important;
+}
+
+.swiper-pagination-bullets {
+bottom: 2.5px!important;
+}
+  .swiper-pagination-bullet {
+   width: 20px!important;
+   opacity: 0.5!important;
+   height: 2px!important;
+   padding-top: 6px; 
+   padding-bottom: 6px;
+   background: linear-gradient(180deg, transparent 0%, transparent 44% ,black 45%, black 60%, transparent 61%, transparent 100%); 
+   margin-left: 5px!important;
+}
+.goalCarousel .swiper-pagination-bullet{  
+   background: linear-gradient(180deg, transparent 0%, transparent 44% ,white 45%, white 60%, transparent 61%, transparent 100%); 
+   
+ }
+.swiper-pagination-bullet-active {
+   width: 45px!important;
+}
+.goalCarousel .swiper-button-next {
+   right: 9.416667vw!important;
+}
+}
