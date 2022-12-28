@@ -113,6 +113,9 @@
    transform: translateY(0);
    transition: .8s all;
    border-radius: 1.04166666667vw!important;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 
 }
 .photoCarousel .swiper-slide-active img{
@@ -320,7 +323,7 @@
     text-align: center;
     margin-bottom: 10px;
 }
-.gm-style-iw-d button{
+.gm-style-iw-d a{
    font-size: 1vw;
     font-family: 'nunito';
     color: white; 
@@ -359,7 +362,7 @@
 
 @media(max-width:1080px){
    .majorCarousel{
-      padding-bottom: 30px!important;
+      padding-bottom: 60px!important;
    }
    .majorCarouselSlide{
       width: 40vw;
@@ -383,6 +386,11 @@
       padding-right: 15px;
    }
    .swiper-button-prev, .swiper-button-next{
+      width:20px!important;
+      height:20px!important;
+      background-size: contain!important;
+   }
+  .goalCarousel .swiper-button-prev,.goalCarousel .swiper-button-next{
       width:15px!important;
       height:15px!important;
       background-size: contain!important;
@@ -398,9 +406,7 @@
       background: linear-gradient(180deg, transparent 0%, transparent 44% ,white 45%, white 60%, transparent 61%, transparent 100%); 
    
    }
-   .majorCarousel .swiper-button-next {
-      right: 37.2vw!important;
-  }
+   
   .awarenessBrandIcon2.active{
    transform: rotate(-15deg);
 }
@@ -415,31 +421,119 @@
    padding-bottom: 55px!important;
 }
 .goalCarousel .swiper-button-prev,.goalCarousel .swiper-button-next{
-   width:15px!important;
-   height:15px!important;
+   width:20px!important;
+   height:20px!important;
    background-size: contain!important;
 }
 
 .swiper-pagination-bullets {
-bottom: 2.5px!important;
+bottom: 4.5px!important;
 }
   .swiper-pagination-bullet {
-   width: 20px!important;
+   width: 25px!important;
    opacity: 0.5!important;
    height: 2px!important;
    padding-top: 6px; 
    padding-bottom: 6px;
    background: linear-gradient(180deg, transparent 0%, transparent 44% ,black 45%, black 60%, transparent 61%, transparent 100%); 
-   margin-left: 5px!important;
+   margin-left: 0!important;
+   margin-right: 10px!important;
+}
+
+  .goalCarousel .swiper-pagination-bullet {
+   width: 20px!important;
+   height: 2px!important;
+   padding-top: 6px; 
+   padding-bottom: 6px;
+   background: linear-gradient(180deg, transparent 0%, transparent 44% ,black 45%, black 60%, transparent 61%, transparent 100%); 
+   margin-left: 0!important;
+   margin-right: 5px!important;
+}
+.goalCarousel .swiper-pagination-bullet:nth-last-child(1){
+   margin-right: 0px!important;
+}
+.swiper-pagination-bullet:nth-last-child(1){
+   margin-right: 0px!important;
 }
 .goalCarousel .swiper-pagination-bullet{  
    background: linear-gradient(180deg, transparent 0%, transparent 44% ,white 45%, white 60%, transparent 61%, transparent 100%); 
    
  }
 .swiper-pagination-bullet-active {
+   width: 55px!important; 
+   opacity: 1!important;
+}
+.goalCarousel .swiper-pagination-bullet-active {
    width: 45px!important;
 }
 .goalCarousel .swiper-button-next {
-   right: 9.416667vw!important;
+   right: 10.416667vw!important;
 }
+.photoCarousel .swiper-slide {
+   padding-top: 45px!important;
+   width: 82.90625vw;
+   margin-right: 15px;
+   border-radius: 12px!important;
+   height: 285px;
+   padding-bottom: 15px;
+}
+.photoCarousel .swiper-slide-active img{
+   transform: translateY(-45px) 
+   }
+
+   .photoCarousel .swiper-button-prev {
+      left: 17.15625vw!important;
+  }
+   .photoCarousel .swiper-button-next {
+      right: 17.15625vw!important;
+  }
+  .partnersCarousel{
+   padding-bottom: 30px!important;
+  }
+  
+  .partnersCarousel .swiper-button-prev{
+   left: 22.5625vw!important;
+}
+ .partnersCarousel .swiper-button-next{
+   right: 22.5625vw!important;
+ }
+
+.gm-style-iw.gm-style-iw-c{
+   padding:10px!important;
+   max-width: 220px!important;
+   max-height: 300px!important;
+}
+.gm-style-iw-d h5{
+   font-size: 22px;
+   margin-top: 10px;
+}
+.gm-style-iw-d a{
+   font-size: 14px; 
+    margin-top: 10px;
+     border-radius: 8px;
+   padding: 5px;
+}
+.gm-style-iw-d img{
+   border-radius: 8px;
+}
+#closeWindow{
+   position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+}
+.majorPagination{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-left: -4vw;
+}
+.majorCarousel .swiper-button-prev{
+   left: 14%!important;
+}
+.majorCarousel .swiper-button-next{
+   right: 23%!important;
+}
+ 
+
 }

@@ -11,8 +11,8 @@ let slideNumber = 0
 
 const changeActivePaginationClass =(slideNo)=>{
      
-    let activeClass = window.innerWidth >= 1080?'lg:w-[4.270vw]': 'w-[45px]'
-  let nonActiveClass = window.innerWidth >= 1080?'lg:w-[1.354vw]': 'w-[20px]'
+    let activeClass = window.innerWidth >= 1080?'lg:w-[4.270vw]': 'w-[55px]'
+  let nonActiveClass = window.innerWidth >= 1080?'lg:w-[1.354vw]': 'w-[25px]'
   paginationDots.forEach((item,index)=>{
       if(index == slideNo){
           item.classList.add(activeClass)
@@ -70,14 +70,14 @@ const handlePrevious =()=>{
     slideNumber = slideNumber == 0 ? slides.length - 1 : slideNumber - 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,80000000)
+    myTimer = setInterval(handleNext,8000)
 }
 
 const handleNext =()=>{
     slideNumber = slideNumber == slides.length - 1 ? 0 : slideNumber + 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,80000000)
+    myTimer = setInterval(handleNext,8000)
 
 }
 
@@ -85,7 +85,7 @@ const handleDot =(slideNo)=>{
     slideNumber = slideNo
     changeSlide(slideNo)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,80000000)
+    myTimer = setInterval(handleNext,8000)
 }
 
 paginationDots.forEach((dot,index)=>{
@@ -102,7 +102,7 @@ window.addEventListener('scroll',()=>{
         if(!firstVisit){
             firstVisit = true
             slider.classList.add('active')
-            myTimer = setInterval(handleNext,80000000)
+            myTimer = setInterval(handleNext,8000)
         }
     }
 })

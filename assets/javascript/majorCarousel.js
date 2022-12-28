@@ -50,8 +50,8 @@ let width =  window.innerWidth >= 1080? 22.65625:43
 let translateX = (window.innerWidth / 100) * width   
 
 const changeMajorActivePaginationClass =()=>{
-  let activeClass = window.innerWidth >= 1080?'lg:w-[4.270vw]': 'w-[45px]'
-  let nonActiveClass = window.innerWidth >= 1080?'lg:w-[1.354vw]': 'w-[20px]'
+  let activeClass = window.innerWidth >= 1080?'lg:w-[4.270vw]': 'w-[55px]'
+  let nonActiveClass = window.innerWidth >= 1080?'lg:w-[1.354vw]': 'w-[25px]'
   majorPaginationDots.forEach((item,index)=>{
       if(index == majorCarouselSlideNo){
           item.classList.add(activeClass)
