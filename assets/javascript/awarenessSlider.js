@@ -78,14 +78,14 @@ const handlePrevious =()=>{
     slideNumber = slideNumber == 0 ? slides.length - 1 : slideNumber - 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,8000)
+    myTimer = setInterval(handleNext,800000)
 }
 
 const handleNext =()=>{
     slideNumber = slideNumber == slides.length - 1 ? 0 : slideNumber + 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,8000)
+    myTimer = setInterval(handleNext,800000)
 
 }
 
@@ -93,7 +93,7 @@ const handleDot =(slideNo)=>{
     slideNumber = slideNo
     changeSlide(slideNo)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,8000)
+    myTimer = setInterval(handleNext,800000)
 }
 
 paginationDots.forEach((dot,index)=>{
@@ -110,7 +110,7 @@ window.addEventListener('scroll',()=>{
         if(!firstVisit){
             firstVisit = true
             slider.classList.add('active')
-            myTimer = setInterval(handleNext,8000)
+            myTimer = setInterval(handleNext,800000)
         }
     }
 })

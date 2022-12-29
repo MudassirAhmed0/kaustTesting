@@ -364,7 +364,9 @@
 #bodyContent div img{
    width:100%
 } */
-
+.awarenessBrandIcon{
+   transform-origin: center center;
+}
 .awarenessBrandIcon image{
    opacity: 0;
    transition: .5s all;
@@ -374,7 +376,7 @@
    
 }
 
-@media(max-width:1080px){
+@media(max-width:1023px){
    .majorCarousel{
       padding-bottom: 60px!important;
    }

@@ -777,6 +777,10 @@ video {
   top: 1.1%;
 }
 
+.bottom-\[50px\] {
+  bottom: 50px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -3567,6 +3571,10 @@ body{
 
   .lg\:left-\[-32\.92\%\] {
     left: -32.92%;
+  }
+
+  .lg\:bottom-\[7\.8125vw\] {
+    bottom: 7.8125vw;
   }
 
   .lg\:my-\[1\.70vw\] {
