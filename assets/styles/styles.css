@@ -3531,6 +3531,14 @@ body{
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-\[150px\] {
     height: 150px;
   }
