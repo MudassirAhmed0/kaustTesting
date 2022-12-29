@@ -69,7 +69,7 @@
     </header>
     <section class="min-h-[100vh] relative flex items-center">
       <video
-        src="./assets/videos/for mobile.mp4"
+        src="./assets/videos/heroVideo.mp4"
         loop
         muted
         autoplay
@@ -146,7 +146,7 @@
               up with the world’s most advanced technologies to redefine how
               people live, work, and play.
             </p>
-            <p class="para" >
+            <p id="firstReadMore" class="para" >
               The initiative will begin with a 100-hectare reef restoration
               project at Shushah Island. This will be a global demonstration of
               coral restoration that integrates innovative, in-Kingdom and
@@ -164,7 +164,7 @@
             alt="Signature"
             class="my-[16px] w-[130px] lg:w-[8.020vw] lg:my-[1.70vw] ml-auto" 
           />
-          <div data-aos="fade" data-aos-duration="800"
+          <div data-aos="fade" data-aos-anchor="#firstReadMore" data-aos-duration="800"
           data-aos-delay="400" class="flex items-center gap-x-[16px] lg:gap-x-[1.2vw] group cursor-pointer">
             <span class="para uppercase group-hover:text-[#3E828E]"
               >Read More</span
@@ -221,13 +221,13 @@
             <img
               src="./assets/images/svgs/videoBrandIcon.svg"
               alt="BrandIcon"
-              class=" w-[50px] md:w-[60px] lg:w-[8.96875vw] vBI vBI1 fadeInKarBhai"
+              class=" w-[75px] lg:w-[8.96875vw] vBI vBI1 fadeInKarBhai"
             />
              
             <img
               src="./assets/images/svgs/pauseIcon.svg"
               alt="Pause"
-              class="w-[10px] md:w-[13px] lg:w-[1.30208333333vw]  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
+              class="w-[12px]  lg:w-[1.30208333333vw]  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
             />
           </div>
           <h4 class="heading mb-[5px] lg:mb-[0.52083333333vw]" data-aos="fade-up" data-aos-duration="800">100 Hectares</h4>
@@ -236,34 +236,7 @@
       </div>
     </section>
     <section id='awarenessContainer' class="h-[600px] lg:h-[67.7604166667vw] overflow-hidden bg-[#051632] relative">
-      <div class="absolute w-full h-full top-0 left-0">
-        <img
-          src="./assets/images/svgs/awarenessBrandIcons/Union-1.svg"
-          alt="awarenessBrandIcons"
-          class="awarenessBrandIcon awarenessBrandIcon1 absolute  min-w-[600px] w-[600px] lg:min-w-[126.614583333vw] lg:w-[126.614583333vw] right-[-500px] top-[1.1%] lg:top-[-13.9%] lg:left-[-32.92%] transition-all duration-[800ms] transform rotate-[45deg] active"
-        />
-      </div>
-      <div class="absolute w-full h-full top-0 left-0">
-        <img
-          src="./assets/images/svgs/awarenessBrandIcons/Union-2.svg"
-          alt="awarenessBrandIcons"
-          class="hidden awarenessBrandIcon awarenessBrandIcon2 absolute  min-w-[600px] w-[600px] lg:min-w-[126.614583333vw] lg:w-[126.614583333vw] right-[-500px] top-[1.1%] lg:top-[-13.9%] lg:left-[-32.92%] transition-all duration-[800ms] transform"
-        />
-      </div>
-      <div class="absolute w-full h-full top-0 left-0">
-        <img
-          src="./assets/images/svgs/awarenessBrandIcons/Union-3.svg"
-          alt="awarenessBrandIcons"
-          class="hidden awarenessBrandIcon awarenessBrandIcon3 absolute w-[600px] min-w-[600px] w-[600px] lg:min-w-[126.614583333vw] lg:w-[126.614583333vw] right-[-500px] top-[1.1%] lg:top-[-13.9%] lg:left-[-32.92%] transition-all duration-[800ms] lg:rotate-[15deg] rotate-[-15deg]"
-        />
-      </div>
-      <div class="absolute w-full h-full top-0 left-0">
-        <img
-          src="./assets/images/svgs/awarenessBrandIcons/Union-4.svg"
-          alt="awarenessBrandIcons"
-          class="hidden awarenessBrandIcon awarenessBrandIcon4 absolute w-[600px] min-w-[600px] w-[600px] lg:min-w-[126.614583333vw] lg:w-[126.614583333vw] right-[-500px] top-[1.1%] lg:top-[-13.9%] lg:left-[-32.92%] transition-all duration-[800ms] lg:rotate-[30deg] rotate-[-30deg] "
-        />
-      </div>
+      <div id="includedContent"></div>
       <div
         class="absolute w-full bottom-[190px] lg:bottom-[15.3229vw] left-0 awarenessSlider "
       >
@@ -422,7 +395,7 @@
           </div>
         </div>
       </div>
-       <div class="absolute w-full bottom-[7.8125vw] flex justify-center lg:block">
+       <div class="absolute  w-full lg:w-[84.375vw] left-[50%] transform translate-x-[-50%] bottom-[7.8125vw] flex justify-center lg:block">
         <div class="flex gap-x-[28px] lg:gap-x-[3.333vw] items-center lg:w-[84.645vw]">
           <img
             src="./assets/images/svgs/awarnessCarouselArrow.svg"
@@ -489,7 +462,7 @@
       <div class="w-[92vw] lg:w-[61.7708333333vw]   majorCarousel relative">
         <!-- Additional required wrapper -->
 
-        <div class="majorCarouselWrapper" >
+        <div id="secondReadMore" class="majorCarouselWrapper" >
           <div
           data-aos="fade" data-aos-duration="800" data-aos-delay="600"
             class="majorCarouselSlide transform majorCarouselSlideActive relative rounded-[12px] lg:rounded-[1.04166666667vw] overflow-hidden"
@@ -707,7 +680,7 @@
         <div class="swiper-button-next majorCarouselNext"></div>
       </div>
       <div class="myContainer flex justify-center mt-[40px] lg:mt-[20px] lg:hidden">
-        <div  data-aos="fade" data-aos-duration="800" data-aos-delay="400" class="   flex items-center gap-x-[16px] lg:gap-x-[1.2vw] group cursor-pointer">
+        <div data-aos-anchor="#secondReadMore" data-aos="fade" data-aos-duration="800"  class="   flex items-center gap-x-[16px] lg:gap-x-[1.2vw] group cursor-pointer">
           <span class="para uppercase group-hover:text-[#3E828E]">Read More</span>
           <div class="flex items-center transform scale-[0.7]">
            
@@ -847,7 +820,7 @@
         The gallery below takes you to some pictures from Shushah Island and the
         coral reef around.
       </p>
-      <div class="swiper mt-[30px] lg:mt-[3.75vw] w-full photoCarousel">
+      <div id="thirdAnchor" class="swiper mt-[30px] lg:mt-[3.75vw] w-full photoCarousel">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -897,7 +870,7 @@
         <div class="swiper-button-next"></div>
       </div>
        
-      <div data-aos="fade-up" data-aos-duration="800" class="flex items-center gap-x-[1.2vw] cursor-pointer group mt-[50px] lg:mt-[3.90625vw]">
+      <div data-aos-anchor="#thirdAnchor" data-aos="fade-up" data-aos-duration="800" class="flex items-center gap-x-[1.2vw] cursor-pointer group mt-[50px] lg:mt-[3.90625vw]">
         <span class="para uppercase group-hover:text-[#3E828E]">View All</span>
         <div class="flex items-center transform scale-[0.7] lgs:scale-[1]">
          
@@ -931,7 +904,7 @@
     <span class="absolute w-full h-[5px] bottom-[-5px] left-0 bg-white"></span>
     <span class="absolute w-full h-[5px] bottom-[-5px] left-0 bg-[#F2E6D14D]"></span>
       <h3 class="heading" data-aos="fade-up" data-aos-duration="800" >The Partners</h3>
-      <div class="swiper mt-[30px] lg:mt-[3.75vw] w-[84.375vw] lg:w-[66.3541666667vw] partnersCarousel">
+      <div id="lastAnchor" class="swiper mt-[30px] lg:mt-[3.75vw] w-[84.375vw] lg:w-[66.3541666667vw] partnersCarousel">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -1013,7 +986,7 @@
         <div class="swiper-button-next"></div>
       </div>
       
-      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" class="flex items-center mt-[45px] lg:mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
+      <div data-aos-anchor="#lastAnchor" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" class="flex items-center mt-[45px] lg:mt-[3.90625vw] gap-x-[1.2vw] group cursor-pointer">
         <span class="para uppercase group-hover:text-[#3E828E]">View All Partners</span>
         <div class="flex items-center transform scale-[0.7] lg:scale-[1]">
          
@@ -1235,5 +1208,10 @@
     <script src="./assets/javascript/fslightbox.js"></script>
     <script src="./assets/javascript/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyl0V6q-y690EdIhyuq6fdbvGHoFtGGE&callback=myMap"></script>
+    <script>
+      $(function () {
+        $("#includedContent").load("patterns.html");
+      });
+    </script>
   </body>
 </html>

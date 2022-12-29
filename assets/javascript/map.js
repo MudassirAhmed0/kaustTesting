@@ -1,6 +1,7 @@
 function myMap() {
     var mapProp = {  
-         center: { lat:27.916174, lng: 34.903946 },  
+         center: { lat:27.920091, lng: 34.903958 },  
+        //  center: ( ),  
         zoom: 9.5,
         mapTypeId: 'satellite' ,
         draggable: true
@@ -32,7 +33,7 @@ google.maps.event.addDomListener(zoomInBtn, 'click', function() {
     <div >
     <img class='w-full' src='./assets/images/map/ats-window.jpg'/>
     </div>
-    <a href='https://www.google.com/maps/place/27%C2%B056'03.7%22N+34%C2%B054'14.8%22E/@27.9433621,34.9076335,13.57z/data=!4m5!3m4!1s0x0:0x623ecb33d80dfadb!8m2!3d27.9343637!4d34.904101' target='_blank'>View on the map</a>
+    <a href='https://www.google.com/maps/place/27%C2%B056'03.7%22N+34%C2%B054'14.8%22E/@27.9343637,34.9019123,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x623ecb33d80dfadb!8m2!3d27.9343637!4d34.904101' target='_blank'>View on the map</a>
     </div>
     </div>`;
   const infowindow = new google.maps.InfoWindow({

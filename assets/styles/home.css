@@ -105,7 +105,8 @@
    padding-top: 3.75vw!important;
    transition: .5s;
    width: 58.90625vw;
-   margin-right: 3.7vw;
+   margin-right: 1.85vw;
+   margin-left: 1.85vw;
    border-radius: 1.04166666667vw!important;
    overflow: hidden;
 }
@@ -128,11 +129,11 @@
 }
 .majorCarouselWrapper{
    display: flex;
-   overflow: scroll;
+   overflow: hidden;
 }
-.majorCarousel::-webkit-scrollbar{
+/* .majorCarousel::-webkit-scrollbar{
    display: none;
-}
+} */
 .majorCarouselSlide{
    transition: .8s all!important;
    width: 20.4583333333vw;
@@ -247,16 +248,16 @@
    opacity:1
 }
 .awarenessBrandIcon1.active{
-   transform: rotate(0deg);
+   /* transform: rotate(0deg); */
 }
 .awarenessBrandIcon2.active{
-   transform: rotate(15deg);
+   /* transform: rotate(15deg); */
 }
 .awarenessBrandIcon3.active{
-   transform: rotate(30deg);
+   /* transform: rotate(30deg); */
 }
 .awarenessBrandIcon4.active{
-   transform: rotate(45deg);
+   /* transform: rotate(45deg); */
 }
 
 
@@ -335,6 +336,8 @@
      border-radius: 0.6vw;
    padding: 0.3vw;
     background-color: rgb(242, 169, 67);
+    display: block ;
+    text-align: center;
 }
 .gm-style-iw-d img{
    border-radius: 0.6vw;
@@ -362,6 +365,14 @@
    width:100%
 } */
 
+.awarenessBrandIcon image{
+   opacity: 0;
+   transition: .5s all;
+}
+.awarenessBrandIcon.active image{
+   opacity: 1;
+   
+}
 
 @media(max-width:1080px){
    .majorCarousel{
@@ -371,12 +382,12 @@
       width: 40vw;
       min-width: 40vw;
       margin-right:12px;
-      height: 380px;
+      height: 410px;
    
    }
    .majorCarouselSlideActive{
       width: 70vw;
-      min-width: 75vw;
+      min-width: 78vw;
    }
    .majorCarouselSlide h5{
       font-size: 20px;
@@ -411,13 +422,13 @@
    }
    
   .awarenessBrandIcon2.active{
-   transform: rotate(-15deg);
+   /* transform: rotate(-15deg); */
 }
 .awarenessBrandIcon3.active{
-   transform: rotate(-30deg);
+   /* transform: rotate(-30deg); */
 }
 .awarenessBrandIcon4.active{
-   transform: rotate(-45deg);
+   /* transform: rotate(-45deg); */
 }
 
 .goalCarousel{
@@ -475,10 +486,14 @@ bottom: 4.5px!important;
 .photoCarousel .swiper-slide {
    padding-top: 45px!important;
    width: 82.90625vw;
-   margin-right: 15px;
+   margin-right: 8px;
+   margin-left: 8px;
    border-radius: 12px!important;
-   height: 285px;
-   padding-bottom: 15px;
+   height: 290px;
+   padding-bottom: 20px;
+}
+.photoCarousel .swiper-slide img{
+   border-radius: 12px!important;
 }
 .photoCarousel .swiper-slide-active img{
    transform: translateY(-45px) 

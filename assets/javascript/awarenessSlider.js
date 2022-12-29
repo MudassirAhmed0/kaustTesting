@@ -2,7 +2,12 @@ const prevArrow = document.querySelector('.awarenessPrevArrow')
 const nextArrow = document.querySelector('.awarenessNextArrow')
 const slides = document.querySelectorAll('.awarenessSlide')
 const slider = document.querySelector('.awarenessSlider')
-const awarenessBrandIcons = document.querySelectorAll('.awarenessBrandIcon')
+let awarenessBrandIcons ;
+let aBIC = document.getElementById('aBIC')
+setTimeout(()=>{
+     awarenessBrandIcons = document.querySelectorAll('.awarenessBrandIcon')
+
+},5000)
 let paginationDots =document.querySelectorAll('.awarenessPagination span')
 let slideNumber = 0
 
@@ -11,8 +16,8 @@ let slideNumber = 0
 
 const changeActivePaginationClass =(slideNo)=>{
      
-    let activeClass = window.innerWidth >= 1080?'lg:w-[4.270vw]': 'w-[55px]'
-  let nonActiveClass = window.innerWidth >= 1080?'lg:w-[1.354vw]': 'w-[25px]'
+    let activeClass = window.innerWidth >= 1024?'lg:w-[4.270vw]': 'w-[55px]'
+  let nonActiveClass = window.innerWidth >= 1024?'lg:w-[1.354vw]': 'w-[25px]'
   paginationDots.forEach((item,index)=>{
       if(index == slideNo){
           item.classList.add(activeClass)
@@ -45,17 +50,17 @@ const hideAllSlidesExcept =(slideNo)=>{
 }
 
 const changeBrandIcon =(slideNo)=>{
+  let rotate = window.innerWidth >= 1024?`rotate(${slideNo * 15}deg)`: `rotate(-${slideNo * 15}deg)`
+
     awarenessBrandIcons.forEach((item,index)=>{
         if(index == slideNo){
-            item.classList.remove('hidden')
-            setTimeout(()=>{
-                item.classList.add('active')
-            },100)
-        }else{
-            item.classList.add('hidden')
+          item.classList.add('active')
+            
+        }else{ 
             item.classList.remove('active')
-
+            
         }
+        item.style.transform = rotate
     })
 }
 

@@ -46,12 +46,12 @@ const prevBtn = document.querySelector('.majorCarouselPrev')
 const majorCarouselSlides = document.querySelectorAll('.majorCarouselSlide')
 const majorPaginationDots = document.querySelectorAll('.majorPagination span')
 let majorCarouselSlideNo = 0
-let width =  window.innerWidth >= 1080? 22.65625:43 
+let width =  window.innerWidth >= 1024? 22.65625:43 
 let translateX = (window.innerWidth / 100) * width   
 
 const changeMajorActivePaginationClass =()=>{
-  let activeClass = window.innerWidth >= 1080?'lg:w-[4.270vw]': 'w-[55px]'
-  let nonActiveClass = window.innerWidth >= 1080?'lg:w-[1.354vw]': 'w-[25px]'
+  let activeClass = window.innerWidth >= 1024?'lg:w-[4.270vw]': 'w-[55px]'
+  let nonActiveClass = window.innerWidth >= 1024?'lg:w-[1.354vw]': 'w-[25px]'
   majorPaginationDots.forEach((item,index)=>{
       if(index == majorCarouselSlideNo){
           item.classList.add(activeClass)
