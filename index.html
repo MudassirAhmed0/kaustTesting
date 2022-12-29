@@ -68,7 +68,7 @@
       </div>
     </header>
     <section class="min-h-[100vh] relative flex items-center">
-      <video
+      <!-- <video
         src="./assets/videos/heroVideo.mp4"
         loop
         muted
@@ -83,7 +83,7 @@
         autoplay
         playsinline
         class="w-full h-full  top-0 left-0 object-cover fixed md:hidden"
-      ></video>
+      ></video> -->
       <span class="fixed w-full h-full top-0 left-0 heroOverlay"></span>
       <div class="myContainer relative text-white pt-[16.29vh]">
         <img
@@ -204,12 +204,12 @@
       </div>
     </section>
     <section id="videoPopup" class="fixed  top-0 left-0 w-full h-full  items-center z-[55] flex ">
-      <span  id="videoOverlay" class="bg-black opacity-[0.8] absolute top-0 left-0 w-full h-full">
+      <span  id="videoOverlay" class="bg-black opacity-[0.91] absolute top-0 left-0 w-full h-full">
 
       </span>
-      <img id="videoCloser" src="./assets/images/svgs/close.svg" alt="Close" class="absolute lg:right-[1.04166666667vw] lg:top-[1.04166666667vw] lg:w-[2.60416666667vw] w-[45px] top-[-5px] right-[-5px] cursor-pointer">
-      <div class="myContainer rounded-[1.04166666667vw] overflow-hidden relative h-full max-h-[48vw]" >
-        <iframe class="w-[84.375vw] h-full" src="https://player.vimeo.com/video/753530667?autoplay=1&background=0&title=1&byline=1&badge=false&autopause=false&portrait=1&controls=1&loop=0&muted=1#t=0s" frameborder="0"></iframe>
+      <img id="videoCloser" src="./assets/images/svgs/close.svg" alt="Close" class="absolute lg:right-[1.04166666667vw] lg:top-[1.04166666667vw] z-[5555] lg:w-[2.60416666667vw] w-[45px] top-[-5px] right-[-5px] cursor-pointer">
+      <div class="w-[100vw] lg:w-[84.475vw] lg:mx-auto lg:rounded-[1.04166666667vw] overflow-hidden relative h-full max-h-[54.7222222222vw] lg:max-h-[48vw]" >
+        <iframe class="w-[100vw] lg:w-[84.375vw] max-h-[54.7222222222vw] h-full" src="https://player.vimeo.com/video/753530667?autoplay=1&background=0&title=1&byline=1&badge=false&autopause=false&portrait=1&controls=1&loop=0&muted=1#t=0s" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 
       </div>
     </section>
@@ -1202,7 +1202,13 @@
     </div>
 
     <script src="./assets/javascript/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#includedContent").load("patterns.html");
+      });
+    </script>
     <script src="./assets/javascript/loader.js"></script>
+
     <script src="./assets/javascript/aos.js"></script>
     <script src="./assets/javascript/swiper-bundle.min.js"></script>
     <script src="./assets/javascript/aosInit.js"></script>
@@ -1216,10 +1222,6 @@
     <script src="./assets/javascript/fslightbox.js"></script>
     <script src="./assets/javascript/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACyl0V6q-y690EdIhyuq6fdbvGHoFtGGE&callback=myMap"></script>
-    <script>
-      $(function () {
-        $("#includedContent").load("patterns.html");
-      });
-    </script>
+    
   </body>
 </html>

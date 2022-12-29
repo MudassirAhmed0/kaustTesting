@@ -2,9 +2,9 @@ const prevArrow = document.querySelector('.awarenessPrevArrow')
 const nextArrow = document.querySelector('.awarenessNextArrow')
 const slides = document.querySelectorAll('.awarenessSlide')
 const slider = document.querySelector('.awarenessSlider')
-let awarenessBrandIcons =
+let awarenessBrandIcons 
 setTimeout(()=>{
-    document.querySelectorAll('.awarenessBrandIcon') ;
+    awarenessBrandIcons=  document.querySelectorAll('.awarenessBrandIcon') ;
 },7000)
 let aBIC = document.getElementById('aBIC')
 

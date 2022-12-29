@@ -552,6 +552,8 @@ bottom: 4.5px!important;
 .majorCarousel .swiper-button-next{
    right: 23%!important;
 }
- 
+/* .videoOverlay{
+   background: linear-gradient(0deg, rgba(5, 22, 50, 0.9), rgba(5, 22, 50, 0.9))
+} */
 
 }
