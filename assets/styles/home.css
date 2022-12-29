@@ -128,7 +128,10 @@
 }
 .majorCarouselWrapper{
    display: flex;
-   overflow: hidden;
+   overflow: scroll;
+}
+.majorCarousel::-webkit-scrollbar{
+   display: none;
 }
 .majorCarouselSlide{
    transition: .8s all!important;

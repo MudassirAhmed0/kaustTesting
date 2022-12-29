@@ -75,10 +75,11 @@ const changeMajorSlide = ()=>{
     }else{
       slide.classList.remove('majorCarouselSlideActive')
     }
-    slide.style.transform=`translateX(-${translateX * majorCarouselSlideNo}px)`
+    document.querySelector('.majorCarouselWrapper').scrollBy(translateX,0)
+    // slide.style.transform=`translateX(-${translateX * majorCarouselSlideNo}px)`
   })
 }
-
+setInterval(()=>{console.log(document.querySelector('.majorCarouselWrapper').scrollX)},1000)
 const handleMajorNext =()=>{
   majorCarouselSlideNo = majorCarouselSlideNo != majorCarouselSlides.length - 1 ? majorCarouselSlideNo + 1: majorCarouselSlideNo
  changeMajorSlide()
