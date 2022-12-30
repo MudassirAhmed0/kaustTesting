@@ -61,10 +61,12 @@ const changeBrandIcon =(slideNo)=>{
         if(index == slideNo){
           item.classList.add('active')
           item.querySelector('image').style.opacity =1
+          
             
         }else{ 
             item.classList.remove('active')
           item.querySelector('image').style.opacity =0
+           
             
         }
         item.style.transform = rotate
