@@ -50,8 +50,8 @@ const hideAllSlidesExcept =(slideNo)=>{
 }
 
 const changeBrandIcon =(slideNo)=>{
-  let rotate = window.innerWidth >= 1024?`rotate(${slideNo * 15}deg)`: `rotate(-${slideNo * 15}deg)`
-//   let rotate = 0
+//   let rotate = window.innerWidth >= 1024?`rotate(${slideNo * 15}deg)`: `rotate(-${slideNo * 15}deg)`
+  let rotate = 0
   if(awarenessBrandIcons.length != 3){
      awarenessBrandIcons = document.querySelectorAll('.awarenessBrandIcon')
 

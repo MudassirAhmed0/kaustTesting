@@ -369,7 +369,7 @@
 }
 .awarenessBrandIcon image{
    opacity: 0;
-   transition: .5s all;
+   transition: .8s all;
 }
 .awarenessBrandIcon.active image{
    opacity: 1;
