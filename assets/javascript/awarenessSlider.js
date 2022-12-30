@@ -50,18 +50,21 @@ const hideAllSlidesExcept =(slideNo)=>{
 }
 
 const changeBrandIcon =(slideNo)=>{
-//   let rotate = window.innerWidth >= 1024?`rotate(${slideNo * 15}deg)`: `rotate(-${slideNo * 15}deg)`
-  let rotate = 0
+  let rotate = window.innerWidth >= 1024?`rotate(${slideNo * 15}deg)`: `rotate(-${slideNo * 15}deg)`
+//   let rotate = 0
   if(awarenessBrandIcons.length != 3){
      awarenessBrandIcons = document.querySelectorAll('.awarenessBrandIcon')
 
     }
     awarenessBrandIcons.forEach((item,index)=>{
+        item.querySelector('image').style.transition = '.8s all'
         if(index == slideNo){
           item.classList.add('active')
+          item.querySelector('image').style.opacity =1
             
         }else{ 
             item.classList.remove('active')
+          item.querySelector('image').style.opacity =0
             
         }
         item.style.transform = rotate
@@ -79,14 +82,14 @@ const handlePrevious =()=>{
     slideNumber = slideNumber == 0 ? slides.length - 1 : slideNumber - 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,800000)
+    myTimer = setInterval(handleNext,8000)
 }
 
 const handleNext =()=>{
     slideNumber = slideNumber == slides.length - 1 ? 0 : slideNumber + 1
     changeSlide(slideNumber)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,800000)
+    myTimer = setInterval(handleNext,8000)
 
 }
 
@@ -94,7 +97,7 @@ const handleDot =(slideNo)=>{
     slideNumber = slideNo
     changeSlide(slideNo)
     clearInterval(myTimer)
-    myTimer = setInterval(handleNext,800000)
+    myTimer = setInterval(handleNext,8000)
 }
 
 paginationDots.forEach((dot,index)=>{
@@ -111,7 +114,7 @@ window.addEventListener('scroll',()=>{
         if(!firstVisit){
             firstVisit = true
             slider.classList.add('active')
-            myTimer = setInterval(handleNext,800000)
+            myTimer = setInterval(handleNext,8000)
         }
     }
 })
