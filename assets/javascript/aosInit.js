@@ -1,4 +1,4 @@
 AOS.init({once: true});
  let heroVideo =document.querySelector('video')
- heroVideo.src=  window.innerWidth > 768 ?'./assets/videos/mob_video.mp4':'./assets/videos/mob_video.mp4'
+ heroVideo.src=  window.innerWidth > 768 ?'./assets/videos/heroVideo.mp4':'./assets/videos/mob_video.mp4'
     
