@@ -50,25 +50,25 @@ const hideAllSlidesExcept =(slideNo)=>{
 }
 
 const changeBrandIcon =(slideNo)=>{
-  let rotate = window.innerWidth >= 1024?`rotate(${slideNo * 15}deg)`: `rotate(-${slideNo * 15}deg)`
-//   let rotate = 0
+  let rotate = window.innerWidth >= 1024?`rotate(${slideNo * 72 +9}deg)`: `rotate(-${slideNo * 15}deg)`
+    
   if(awarenessBrandIcons.length != 3){
      awarenessBrandIcons = document.querySelectorAll('.awarenessBrandIcon')
 
     }
     awarenessBrandIcons.forEach((item,index)=>{
-        item.querySelector('image').style.transition = '.8s all'
-        if(index == slideNo){
-          item.classList.add('active')
-          item.querySelector('image').style.opacity =1
+        // item.style.transform = (`rotate(${rotate}deg)`)
+        // if(index == slideNo){
+        //   item.classList.add('active')
+        //   item.querySelector('image').style.opacity =1
           
             
-        }else{ 
-            item.classList.remove('active')
-          item.querySelector('image').style.opacity =0
+        // }else{ 
+        //     item.classList.remove('active')
+        //   item.querySelector('image').style.opacity =0
            
             
-        }
+        // }
         item.style.transform = rotate
     })
 }
