@@ -554,9 +554,6 @@ bottom: 4.5px!important;
 .majorCarousel .swiper-button-next{
    right: 23%!important;
 }
-.heroOverlay{ 
-   background: linear-gradient(270deg, rgba(5, 22, 50, 0) 0%, rgba(5, 22, 50, 0.4) 69.79%, #051632 100%);
 
-}
 
 }
